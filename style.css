@@ -1,0 +1,291 @@
+/* GENERAL RESET STYLES*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*CONTAINER THAT HOLDS THE TEXT AND LAYOUT (APART FROM HERO SECTIONS) OF THE PAGES TOGETHER */
+
+.container {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+/*HOME PAGE LAYOUT - HERO SECTION AND LAYOUT*/
+
+.home-page-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 11rem;
+}
+
+.home-page-background-hero-image {
+    background-image: url(images/home-page-cropped.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-rows: 1 / 2; 
+}
+
+/* STYLES OF THE NAVIGATION*/
+
+nav {
+    display: flex;
+    /*background-color: rgba(61, 49, 49, 0.336);*/
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.2rem 1.2rem 0.2rem 1.2rem;
+    width: 100%;
+    height: 5rem;
+    
+}
+
+nav h1 {
+    color: rgb(255, 255, 255);
+    font-size: 0.5rem;
+    margin-top: 0.3rem;  
+}
+
+
+nav ul li {
+    list-style-type: none;
+    /*I commented out this, because it was breaking the alignment of the items in navigation, 
+    but will keep in like that in case we need to change it later*/
+    /*margin: 0.1rem;
+    padding: 0.3rem;*/
+}
+
+nav ul li a {
+    color: rgb(214, 248, 241);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+
+/* STYLES FOR THE LOGO OF THE WEBSITE */ 
+
+.logo img {
+    border-radius: 60%;
+    width: 2.5rem;
+    
+    /* "display: flex;" in this case allows me to center the logo in the navigation too.
+    if I don't include it, the image is not centered, it is not affected by the styles of the <nav> tag*/
+    display: flex;  
+}
+
+/*ABOUT ME STYLES*/
+
+.about-me {
+    grid-template-rows: 2 / 3;
+    /*border-bottom: 1px solid rgb(173, 173, 173);*/
+}
+
+/*I would have to test if this image can be used on the hero section */
+
+/*.about-me-background {
+    background: url(images/IMG_0021.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
+
+.about-me h1 {
+    padding: 1rem 0 1rem 0;
+    line-height: 1.3;
+    font-size: 2rem;
+    line-height: 2.3rem;
+    color: rgb(0, 0, 0);
+}
+
+.about-me p, li {
+    color: rgba(0, 0, 0, .7);
+}
+
+.about-me i {
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    height: 1rem;
+    width: 1rem;
+}
+
+.about-me p:nth-of-type(2) {
+    margin-top: 0.5rem;
+}
+
+.about-me ul {
+    list-style-type: none;
+}
+
+.about-me li {
+    margin-bottom: .5rem;
+}
+
+/*PERSONAL AND ONLINE TRAINING STYLESS*/
+
+.personal-and-online-training {
+    grid-template-columns: 3 / 4;
+    background-color: rgba(65, 204, 72, 0.363);
+    /*margin-top: 1rem;*/
+}
+
+.personal-and-online-training h1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 2.2rem;
+}
+
+.personal-and-online-training ul {
+    list-style-type: none;
+}
+
+.personal-and-online-training ul li {
+    margin-bottom: 0.4rem;
+}
+
+.personal-and-online-training a {
+    display: inline-block;
+    border-radius: 0.4rem;
+    font-size: 0.8rem;
+    text-decoration: none;
+    padding: .7rem;
+    background-color: rgba(36, 36, 36, 0.815);
+    color: white;
+    margin: 1rem 0 1rem 0;  
+}
+
+.images-personal-training-section img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+
+/* STYLES FOR THE NAVIGATION, LOGO AND HERO IMAGE ON "CLASSES" PAGE */
+
+.classes-layout-grid {
+    display: grid;
+    grid-template-rows: 26.25rem 1fr 315px 11rem;
+}
+
+.classes-hero-background {
+    background-image: url(images/IMG_0021-test2.JPG); 
+    background-repeat: no-repeat;
+    background-size: 100%;
+    grid-template-rows: 1 / 2; 
+    
+}
+
+/* Styles for "Personal & Online Training" section on Classes page*/
+
+.section-2-classes {
+    grid-template-rows: 2 / 3;    
+}
+
+.section-2-classes h1 { 
+    text-align: center; 
+    font-size: 2rem;  
+    line-height: 1.1;
+    margin: 1.3rem 0 1.3rem 0;
+}
+
+.section-2-classes p { 
+    text-align: center;
+    /*margin-bottom: 0.8rem;*/
+    margin: 1.3rem 0 1.3rem 0;
+    font-size: 0.8rem; 
+    color:rgba(36, 36, 36, 0.868)  
+}
+
+.images-personal-training-section {
+    display: grid;
+    gap: 1rem;
+    list-style-type: none;
+    text-align: center;
+    justify-items: center;    
+}
+
+.images-personal-training-section li {
+    font-size: 1.17rem;
+}
+
+/* Styles for "Plans and Pricing" section on Classes page*/
+
+.plans-and-pricing {
+    grid-template-rows: 3 / 4;  
+}
+
+.plans-and-pricing h1 {
+    font-size: 2rem;
+    margin: 1.3rem 0 1.3rem 0;
+    text-align: center;
+}
+
+/*FOOTER STYLES*/
+
+footer {
+    background: rgba(0, 0, 0);
+    grid-template-rows: 4 / 5;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    
+}
+
+footer p {
+    color: white;
+    font-size: 1rem;
+    border-top: none;
+}
+
+footer i {
+    font-size: 1.5rem;
+}
+
+footer i:hover,
+footer i:focus {
+    transform: translateY(-.8rem);
+    transition: transform 250ms ease-in-out;
+}
+
+footer ul li a:hover {
+    color: rgba(255, 255, 255, 0.415);
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.footer-elements-layout ul {
+    list-style-type: none;
+}
+
+.footer-elements-layout a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem; 
+}
+
+.copyright {
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: 0.7rem;
+    
+}
+
