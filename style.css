@@ -25,7 +25,7 @@ html {
 
 .home-page-grid {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 11rem;
+    grid-template-rows: 19% 1fr 1fr 11rem;
 }
 
 .home-page-background-hero-image {
