@@ -252,7 +252,7 @@ nav ul li a {
     right: -35%;
     grid-column: 2 / 3; 
     padding-right: 1rem;
-   
+    overflow: hidden;
 }
 
 .testimonials-card p::after {
