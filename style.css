@@ -1,7 +1,6 @@
 /* GENERAL RESET STYLES*/
 
-*
-{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -13,6 +12,14 @@ img {
 
 html {
     font-family: 'Poppins', sans-serif;
+}
+
+/* CUSTOM PROPERTIES */
+
+:root {
+    --testimonial-quotes-clr: rgba(95, 95, 95, 0.4);
+
+    --fs-heading-sections: 2rem 300 rgb(35, 41, 41) 1.1;
 }
 
 /*CONTAINER THAT HOLDS THE TEXT AND LAYOUT (APART FROM HERO SECTIONS) OF THE PAGES TOGETHER */
@@ -27,7 +34,7 @@ html {
 
 .home-page-grid {
     display: grid;
-    grid-template-rows: 18rem auto 26rem auto auto auto 9rem;
+    grid-template-rows: 18rem auto auto auto auto auto 9rem;
 }
 
 .home-page-background-hero-image {
@@ -114,19 +121,6 @@ nav ul li a {
     margin-bottom: .9rem;
 }
 
-.thin-font-heading-home-page h1 {
-    font-weight: 200;
-    padding-bottom: 1rem;
-}
-
-.about-me h1 span {
-    color: rgb(54, 102, 92);
-}
-
-.about-me p {   
-    font-weight: 300;
-}
-
 .about-me p, li {
     color: rgba(0, 0, 0, .9);
     font-size: .9rem;
@@ -160,7 +154,6 @@ nav ul li a {
 /* STYLES FOR THE SECOND IMAGE ON HOME PAGE */
 
 .second-image {
-    margin-top: 1rem;
     width: 100%;
     height: 350px;
     background: url(images/jpeg1.jpg);
@@ -173,6 +166,11 @@ nav ul li a {
 
 .section-4-5 {
     grid-row: 4 / 5;
+}
+
+.thin-font-heading-home-page h1 {
+    font-weight: 200;
+    padding-bottom: 1rem;
 }
 
 .skewed-border {
@@ -190,6 +188,7 @@ nav ul li a {
 
 .experties li {
     padding: 1.2rem;
+    margin: 0;
 }
 
 .experties li:nth-child(1) {
@@ -233,6 +232,10 @@ nav ul li a {
     margin: 2rem 0;
 }
 
+.testimonials-card:last-child {
+    margin-bottom: 0;
+}
+
 .testimonials-card img {
     width: 80px;
     height: 80px;
@@ -252,13 +255,14 @@ nav ul li a {
     font-weight: 900; 
     content: '\f10d';
     font-size: 3.5rem;
-    color: grey;
+    color: var(--testimonial-quotes-clr);
     position: absolute;
     top: -17%; 
     right: -35%;
     grid-column: 2 / 3; 
     padding-right: 1rem;
     overflow: hidden;
+    transform: rotate(-3deg);
 }
 
  .testimonials-card p::after {
@@ -266,9 +270,10 @@ nav ul li a {
     font-weight: 900; 
     content: '\f10e';
     font-size: 3.5rem;
-    color: grey;
+    color: var(--testimonial-quotes-clr);
     position: absolute;
-    padding-left: 1rem; 
+    padding-left: 1rem;
+    transform: rotate(-3deg); 
 }
 
 .testimonials-card h3 {
@@ -282,7 +287,7 @@ nav ul li a {
 /* Testimonials with images on the right */
 
 .testimonials-card-img-right {
-    background: steelblue;
+    background: rgb(147, 175, 164);
     display: grid;
     grid-template-columns: 50px 1fr 100px;
     grid-template-rows: repeat(2, 70px);
@@ -302,7 +307,7 @@ nav ul li a {
     font-size: .8rem;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    padding: 15px 20px 0 10px;
+    padding: 15px 20px 0 20px;
 }
 
 .testimonials-card-img-right p::before {
@@ -310,13 +315,14 @@ nav ul li a {
     font-weight: 900; 
     content: '\f10d';
     font-size: 3.5rem;
-    color: grey;
+    color: var(--testimonial-quotes-clr);
     position: absolute;
-    top: -20%;
-    left: 5%;
+    top: -17%;
+    left: 10%;
     grid-column: 1 / 2;
     padding-right: 1rem;
     overflow-x: hidden;
+    transform: rotate(3deg);
 }
 
 .testimonials-card-img-right p::after {
@@ -324,9 +330,10 @@ nav ul li a {
     font-weight: 900; 
     content: '\f10e';
     font-size: 3.5rem;
-    color: grey;
+    color: var(--testimonial-quotes-clr);
     position: absolute;
     padding-left: 1rem;
+    transform: rotate(3deg);
 }
 
 .testimonials-card-img-right h3 {
@@ -334,7 +341,7 @@ nav ul li a {
     align-self: end;
     justify-self: start;
     font-size: .6rem;
-    padding-left: 15px;
+    padding-left: 20px;
 }
 
 /* End of Testimonials with image aligned to the right */
