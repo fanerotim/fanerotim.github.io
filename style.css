@@ -27,7 +27,7 @@ html {
 
 .home-page-grid {
     display: grid;
-    grid-template-rows: 18rem 35rem 25rem 25rem 11rem;
+    grid-template-rows: 18rem auto 26rem auto auto auto 9rem;
 }
 
 .home-page-background-hero-image {
@@ -157,6 +157,24 @@ nav ul li a {
     margin-bottom: .5rem;
 }
 
+/* STYLES FOR THE SECOND IMAGE ON HOME PAGE */
+
+.second-image {
+    margin-top: 1rem;
+    width: 100%;
+    height: 350px;
+    background: url(images/jpeg1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    grid-row: 3 / 4;
+}
+
+/* STYLES FOR THE SPECIALIST AREAS AND EXPERTIES SECTION */
+
+.section-4-5 {
+    grid-row: 4 / 5;
+}
+
 .skewed-border {
     border-bottom: 1px solid rgb(19, 16, 16);
     transform: rotate(-3deg);
@@ -176,34 +194,22 @@ nav ul li a {
 
 .experties li:nth-child(1) {
     border-top: 1px solid black;
-    /* border-bottom: 1px solid black; */
-   
+    /* border-bottom: 1px solid black; */  
     border-radius: 50%;
     
 }
 
 .experties li:nth-child(4) {
     border-top: 1px solid black;
-    /* border-bottom: 1px solid black; */
-    
+    /* border-bottom: 1px solid black; */    
     border-radius: 50%;
     
 }
 
-
-/* SECOND BACKGROUND IMAGE ON HOME PAGE */
-
-.second-image {
-    margin-top: 1rem;
-    width: 100%;
-    height: 350px;
-    background: url(images/jpeg1.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
+/* STYLES FOR THE TESTIMONIALS SECTION */
 
 .testimonials {
-    grid-row: 3 / 4;
+    grid-row: 5 / 6;
     border-bottom: rgb(156, 190, 180);
     
 }
@@ -255,7 +261,7 @@ nav ul li a {
     overflow: hidden;
 }
 
-.testimonials-card p::after {
+ .testimonials-card p::after {
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900; 
     content: '\f10e';
@@ -268,8 +274,9 @@ nav ul li a {
 .testimonials-card h3 {
     grid-column: 3 / 4; 
     align-self: end;
+    justify-self: start;
     font-size: .6rem;
-    margin-left: 60%;
+    padding-left: 20px;
 }
 
 /* Testimonials with images on the right */
@@ -288,6 +295,7 @@ nav ul li a {
     border-radius: 50%;
     object-fit: cover;
     grid-column: 3 / 4;
+    justify-self: end;
 }
 
 .testimonials-card-img-right p {
@@ -318,19 +326,15 @@ nav ul li a {
     font-size: 3.5rem;
     color: grey;
     position: absolute;
-    /* bottom: 50%;
-    right: 0; 
-    grid-row: 2 / 3;
-    grid-column: 2 / 3; */
-    /* padding-right: 1rem; */
     padding-left: 1rem;
 }
 
 .testimonials-card-img-right h3 {
     grid-column: 2 / 3; 
     align-self: end;
+    justify-self: start;
     font-size: .6rem;
-    padding-left: 32%;
+    padding-left: 15px;
 }
 
 /* End of Testimonials with image aligned to the right */
@@ -338,7 +342,7 @@ nav ul li a {
 /*PERSONAL AND ONLINE TRAINING STYLESS*/
 
 .personal-and-online-training {
-    grid-column: 4 / 5;
+    grid-row: 6 / 7;
     background-color: rgb(241, 240, 240);
     /*margin-top: 1rem;*/
 }
@@ -447,7 +451,7 @@ nav ul li a {
 
 footer {
     background: rgba(0, 0, 0);
-    grid-row: 4 / 5;
+    grid-row: 7 / 8;
 }
 
 .social-links {
