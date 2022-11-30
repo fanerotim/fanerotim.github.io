@@ -347,7 +347,7 @@ nav ul li a {
 
 .personal-and-online-training {
     grid-row: 6 / 7;
-    background-color: rgb(241, 240, 240);
+    
     /*margin-top: 1rem;*/    
 }
 
@@ -366,6 +366,7 @@ nav ul li a {
     height: 60vh;
     background-image: url(images/classes-bg-image.jpg);
     background-size: cover;
+    margin-top: 2rem;
    
 }
 
