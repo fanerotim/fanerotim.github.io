@@ -4,7 +4,8 @@
     --testimonial-quotes-clr: rgba(95, 95, 95, 0.4);
     
     --fw-section-headings: 200;
-    --fs-section-headings: 2.4rem;
+    --fs-section-headings: 2.7rem;
+    --lh-section-headings: 1;
 }
 
 /* GENERAL RESET STYLES*/
@@ -112,7 +113,7 @@ nav ul li a {
 
 .about-me h1 {
     font-size: var(--fs-section-headings);
-    line-height: 1.1;
+    line-height: var(--lh-section-headings);
     color: rgb(35, 41, 41);
     font-weight: 300;
 }
@@ -170,6 +171,7 @@ nav ul li a {
 
 .thin-font-heading-home-page h1 {
     font-weight: var(--fw-section-headings);
+    line-height: var(--lh-section-headings);
     padding-bottom: 1rem;
 }
 
@@ -217,7 +219,7 @@ nav ul li a {
     font-weight: var(--fw-section-headings);
     text-transform: uppercase;
     font-size: var(--fs-section-headings);
-    line-height: 1.1;   
+    line-height: var(--lh-section-headings);  
 }
 
 .testimonials-card {
@@ -229,10 +231,6 @@ nav ul li a {
     position: relative;
     color: black;
     margin: 2rem 0;
-}
-
-.testimonials-card:last-child {
-    margin-bottom: 0;
 }
 
 .testimonials-card img {
@@ -350,8 +348,25 @@ nav ul li a {
 .personal-and-online-training {
     grid-row: 6 / 7;
     background-color: rgb(241, 240, 240);
-    /*margin-top: 1rem;*/
-    
+    /*margin-top: 1rem;*/    
+}
+
+.chevron-p-and-o-training::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: '\f078';
+    font-size: 5rem;
+    color: rgba(0, 0, 0,);
+    margin-left: 40%;
+    transform: translateX(-40%);
+}
+
+.third-image {
+    width: 100vw;
+    height: 60vh;
+    background-image: url(images/classes-bg-image.jpg);
+    background-size: cover;
+   
 }
 
 .personal-and-online-training h1 {
@@ -359,7 +374,7 @@ nav ul li a {
     padding-bottom: 1rem;
     font-weight: var(--fw-section-headings);
     font-size: var(--fs-section-headings);
-    line-height: 2.2rem;
+    line-height: var(--lh-section-headings);
     text-transform: uppercase;
 }
 
@@ -373,10 +388,10 @@ nav ul li a {
     color: rgb(54, 54, 54);
     margin: 1rem 0 1rem 0;  
     font-weight: 500;
-    margin-left: 69%;
+    
 }
 
-.personal-and-online-training img {
+.personal-and-online-training-list img {
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -385,9 +400,11 @@ nav ul li a {
     transform: translateX(-50%);
 }
 
-.personal-and-online-training ul li {
-    margin: 2rem 0;
+.personal-and-online-training-list li {
+    margin: 1rem 0;
     text-align: center;
+    font-weight: 400;
+    font-size: 1.1rem;
 }
 
 
