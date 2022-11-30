@@ -4,7 +4,7 @@
     --testimonial-quotes-clr: rgba(95, 95, 95, 0.4);
     
     --fw-section-headings: 200;
-    --fs-section-headings: 2rem;
+    --fs-section-headings: 2.4rem;
 }
 
 /* GENERAL RESET STYLES*/
@@ -368,10 +368,12 @@ nav ul li a {
     border-radius: 0.4rem;
     font-size: 0.8rem;
     text-decoration: none;
-    padding: .7rem;
-    background-color: rgba(36, 36, 36, 0.815);
-    color: white;
+    padding: .9rem;
+    background-color: rgba(70, 158, 99, 0.815);
+    color: rgb(54, 54, 54);
     margin: 1rem 0 1rem 0;  
+    font-weight: 500;
+    margin-left: 69%;
 }
 
 .personal-and-online-training img {
@@ -398,7 +400,7 @@ nav ul li a {
 }
 
 .classes-hero-background {
-    background-image: url(images/IMG_0021-test2.JPG); 
+    background-image: url(images/classes-bg-image.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
     grid-row: 1 / 2;    
