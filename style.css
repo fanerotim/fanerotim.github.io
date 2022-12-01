@@ -6,6 +6,8 @@
     --fw-section-headings: 200;
     --fs-section-headings: 2.7rem;
     --lh-section-headings: 1;
+
+    --margin-bottom-headings: 1.5rem;
 }
 
 /* GENERAL RESET STYLES*/
@@ -119,7 +121,7 @@ nav ul li a {
 }
 
 .about-me h1:nth-child(2) {
-    margin-bottom: .9rem;
+    margin-bottom: var(--margin-bottom-headings);
 }
 
 .about-me p, li {
@@ -172,7 +174,7 @@ nav ul li a {
 .thin-font-heading-home-page h1 {
     font-weight: var(--fw-section-headings);
     line-height: var(--lh-section-headings);
-    padding-bottom: 1rem;
+    margin-bottom: var(--margin-bottom-headings);
 }
 
 .skewed-border {
@@ -220,6 +222,7 @@ nav ul li a {
     text-transform: uppercase;
     font-size: var(--fs-section-headings);
     line-height: var(--lh-section-headings);  
+    margin-bottom: var(--margin-bottom-headings);
 }
 
 .testimonials-card {
@@ -386,8 +389,7 @@ nav ul li a {
 }
 
 .personal-and-online-training h1 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    margin-bottom: var(--margin-bottom-headings);
     font-weight: var(--fw-section-headings);
     font-size: var(--fs-section-headings);
     line-height: var(--lh-section-headings);
@@ -400,7 +402,7 @@ nav ul li a {
     font-size: 0.8rem;
     text-decoration: none;
     padding: .9rem;
-    background-color: rgba(70, 158, 99, 0.815);
+    background-color: rgba(121, 209, 183, 0.815);
     color: rgb(54, 54, 54);
     margin: 1rem 0 1rem 0;  
     font-weight: 500;
@@ -424,19 +426,81 @@ nav ul li a {
 }
 
 
-/* STYLES FOR THE NAVIGATION, LOGO AND HERO IMAGE ON "CLASSES" PAGE */
+/*FOOTER STYLES*/
+
+footer {
+    background: rgba(0, 0, 0);
+    grid-row: 7 / 8;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    
+}
+
+footer p {
+    color: white;
+    font-size: 1rem;
+    border-top: none;
+}
+
+footer i {
+    font-size: 2rem;
+}
+
+footer i:hover,
+footer i:focus {
+    transform: translateY(-.8rem);
+    transition: transform 250ms ease-in-out;
+}
+
+footer ul li a:hover {
+    color: rgba(255, 255, 255, 0.415);
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.footer-elements-layout ul {
+    list-style-type: none;
+}
+
+.footer-elements-layout a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem; 
+}
+
+.copyright {
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: 0.7rem;
+    
+}
+
+
+/* STYLES FOR THE NAVIGATION, 
+LOGO AND HERO IMAGE ON "CLASSES" PAGE */
 
 .classes-layout-grid {
     display: grid;
     /* grid-template-rows: 26.25rem 1fr 315px 11rem; */
-    grid-template-rows: 26.25rem auto auto 9rem;
+    grid-template-rows: 15rem auto auto 9rem;
 }
 
 .classes-hero-background {
-    background-image: url(images/classes-bg-image.jpg); 
+    background-image: url(images/loggo.jpg); 
     background-repeat: no-repeat;
-    background-size: cover;
-    grid-row: 1 / 2;    
+    background-size: contain;
+    grid-row: 1 / 2; 
+     
 }
 
 .images-personal-training-section img {
@@ -488,68 +552,13 @@ nav ul li a {
     text-align: center;
 }
 
-/* Styles for the Plans and Pricing cards which I build in a separate html file */
-
-
-
-
-
-/*FOOTER STYLES*/
-
-footer {
-    background: rgba(0, 0, 0);
-    grid-row: 7 / 8;
+.classes-layout-grid footer {
+    grid-row: 4 / 5;
 }
 
-.social-links {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    
-}
 
-footer p {
-    color: white;
-    font-size: 1rem;
-    border-top: none;
-}
 
-footer i {
-    font-size: 1.5rem;
-}
 
-footer i:hover,
-footer i:focus {
-    transform: translateY(-.8rem);
-    transition: transform 250ms ease-in-out;
-}
 
-footer ul li a:hover {
-    color: rgba(255, 255, 255, 0.415);
-}
 
-.footer-flex {
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-    align-items: center;
-}
-
-.footer-elements-layout ul {
-    list-style-type: none;
-}
-
-.footer-elements-layout a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem; 
-}
-
-.copyright {
-    text-align: center;
-    background: black;
-    color: white;
-    font-size: 0.7rem;
-    
-}
 
