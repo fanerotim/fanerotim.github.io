@@ -496,7 +496,7 @@ LOGO AND HERO IMAGE ON "CLASSES" PAGE */
 }
 
 .classes-hero-background {
-    background-image: url(images/loggo.JPG); 
+    background-image: url(images/loggo-edited.jpg); 
     background-repeat: no-repeat;
     background-size: contain;
     grid-row: 1 / 2; 
