@@ -357,9 +357,24 @@ nav ul li a {
     content: '\f078';
     font-size: 5rem;
     color: rgba(0, 0, 0,);
-    margin-left: 40%;
-    transform: translateX(-40%);
+    display: block;
+    text-align: center;
+    animation: 2.5s infinite alternate bounceUpDown; 
 }
+
+/* Animation for the Chevron */
+
+@keyframes bounceUpDown {
+    from {
+        transform: translateY(-10px);
+    }
+
+    to {
+        transform: translateY(10px);
+    }
+}
+
+/* end of animation */
 
 .third-image {
     width: 100vw;
