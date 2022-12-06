@@ -142,3 +142,38 @@ html {
     background: blue;
 }
 
+/* Testing Chevron behaviour */
+
+.chevron-container {
+    height: 700px;
+    width: 90%;
+    border: 1px solid brown;
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+.chevron-test::after {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: '\f078';
+    display: block;
+    font-size: 4.5rem;
+    color: rgba(0, 0, 0,);
+    text-align: center;
+    height: 100vh;
+    border: 1px solid rgb(146, 117, 117);
+}
+
+.chevron-test::after {
+    animation: 3s infinite alternate bouceDownUp;
+}
+
+@keyframes bounceDownUp {
+    from {
+        font-size: 5rem;
+    }
+
+    to {
+        font-size: 7rem;
+    }
+}

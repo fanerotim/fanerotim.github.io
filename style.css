@@ -8,6 +8,7 @@
     --lh-section-headings: 1;
 
     --margin-bottom-headings: 1.5rem;
+    --margin-top-headings: 1.5rem;
 }
 
 /* GENERAL RESET STYLES*/
@@ -492,7 +493,7 @@ LOGO AND HERO IMAGE ON "CLASSES" PAGE */
 .classes-layout-grid {
     display: grid;
     /* grid-template-rows: 26.25rem 1fr 315px 11rem; */
-    grid-template-rows: 15rem auto auto 9rem;
+    grid-template-rows: 18rem auto 9rem;
 }
 
 .classes-hero-background {
@@ -503,62 +504,138 @@ LOGO AND HERO IMAGE ON "CLASSES" PAGE */
      
 }
 
-.images-personal-training-section img {
-    width: 8rem;
-    height: 8rem;
-    border-radius: 50%;
-}
-
-.section-2-classes {
-    grid-row: 2 / 3;    
-}
-
-.section-2-classes h1 { 
-    text-align: center; 
-    font-size: 2rem;  
-    line-height: 1.1;
-    margin: 1.3rem 0 1.3rem 0;
-}
-
-.section-2-classes p { 
-    text-align: center;
-    /*margin-bottom: 0.8rem;*/
-    margin: 1.3rem 0 1.3rem 0;
-    font-size: 0.8rem; 
-    color:rgba(36, 36, 36, 0.868)  
-}
-
-.images-personal-training-section {
-    display: grid;
-    gap: 1rem;
-    list-style-type: none;
-    text-align: center;
-    justify-items: center;    
-}
-
-.images-personal-training-section li {
-    font-size: 1.17rem;
-}
-
-/* Styles for "Plans and Pricing" section on Classes page*/
+/* Styles for "Plans and Pricing" 
+section on Classes page*/
 
 .plans-and-pricing {
-    grid-row: 3 / 4;  
+    grid-row: 2 / 3; 
 }
 
 .plans-and-pricing h1 {
-    font-size: 2rem;
-    margin: 1.3rem 0 1.3rem 0;
-    text-align: center;
+    font-size: var(--fs-section-headings);
+    font-weight: var(--fw-section-headings);
+    line-height: var(--lh-section-headings);
+    margin: var(--margin-top-headings) 0 var(--margin-bottom-headings) 0;  
+    text-transform: uppercase;
 }
+
+.plans-and-pricing h1 span {
+    font-weight: 100;
+}
+
+.plans-and-pricing p {
+    font-weight: 300;
+    font-size: .9rem;
+    margin-top: var(--margin-top-headings);
+}
+
+.plans-heading p::first-letter {
+    font-size: 1.7rem;
+    line-height: .1;
+}
+
+.online-training-section::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: '\31.';
+    font-size: 3.5rem;
+    display: block;
+    margin-top: 1.5rem;
+}
+
+.short-dividing-image-online {
+     background: url(images/online-training.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 12rem;
+     background-blend-mode: lighten;
+     background-color: rgb(62, 80, 70);
+ }
+
+.one-to-one-section::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: '\32.';
+    font-size: 3.5rem;
+    display: block;
+    margin-top: 1.5rem;
+}
+
+.short-dividing-image-group {
+    background: url(images/one-to-one-group.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 12rem;
+    background-blend-mode: lighten;
+    background-color: rgb(62, 80, 70);
+}
+
+/* FOOTER ON CLASSES PAGE */
 
 .classes-layout-grid footer {
-    grid-row: 4 / 5;
+    grid-row: 3 / 4;
 }
 
+/* END OF FOOTER ON CLASSES PAGE */
 
 
+/* STYLES FOR THE CONTACT PAGE */
 
 
+.contact-layout-grid {
+    display: grid;
+    grid-template-rows: 18rem auto 9rem;
+}
 
+.contact-header-bg {
+    background-image: url(images/contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+.contact-main h1 {
+    font-weight: var(--fw-section-headings);
+    font-size: var(--fs-section-headings);
+    line-height: var(--lh-section-headings);
+    text-transform: uppercase;
+    margin: var(--margin-top-headings) 0 var(--margin-bottom-headings) 0;
+}
+
+.contact-main h1 span {
+    font-weight: 100;
+}
+
+.contact-main p {
+    margin-bottom: var(--margin-bottom-headings);
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+.contact-main h2 {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.contact-main h2:last-child {
+    margin-bottom: var(--margin-bottom-headings);
+}
+
+.phone h2:first-child::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f095";
+    margin-right: 1rem;
+}
+
+.phone h2:last-child::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f0e0";
+    margin-right: 1rem;
+}
+
+/* FOOTER ON CONTACT PAGE */
+
+.contact-layout-grid footer {
+    grid-row: 3 / 4;
+}
