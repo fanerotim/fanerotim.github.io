@@ -363,7 +363,7 @@ nav ul li a {
     color: rgba(0, 0, 0,);
     display: block;
     text-align: center;
-    animation: 2.5s infinite alternate bounceUpDown; 
+    animation: 1.2s infinite alternate bounceUpDown; 
 }
 
 /* Animation for the Chevron */
@@ -569,6 +569,56 @@ section on Classes page*/
     background-blend-mode: lighten;
     background-color: rgb(62, 80, 70);
 }
+
+.corporate-package-section::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: '\33.';
+    font-size: 3.5rem;
+    display: block;
+    margin-top: 1.5rem;
+}
+
+.short-dividing-image-corporate {
+    background: url(images/corporate-training.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 12rem;
+    background-blend-mode: lighten;
+    background-color: rgba(62, 80, 70);
+}
+
+.custom-plan-section h2 {
+    font-size: 1.4rem;
+    font-weight: 200;
+    line-height: 1.2;
+}
+
+.at-home {
+    margin-top: var(--margin-top-headings);
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.at-home img {
+    width: 135px;
+    height: 135px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.at-home p {
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-self: center;
+    justify-self: center;
+}
+
+
 
 /* FOOTER ON CLASSES PAGE */
 
