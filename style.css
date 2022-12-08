@@ -397,7 +397,7 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-.personal-and-online-training a {
+.button {
     display: inline-block;
     border-radius: 0.4rem;
     font-size: 0.8rem;
@@ -412,18 +412,13 @@ nav ul li a {
 
 .personal-and-online-training-list img {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 135px;
+    height: 135px;
     object-fit: cover;
-    margin-left: 50%;
-    transform: translateX(-50%);
-}
-
-.personal-and-online-training-list li {
-    margin: 1rem 0;
-    text-align: center;
-    font-weight: 400;
-    font-size: 1.1rem;
+    justify-self: end;
+    align-self: end;
+    /* margin-left: 50%; */
+    /* transform: translateX(-50%); */
 }
 
 
@@ -602,14 +597,14 @@ section on Classes page*/
 }
 
 .at-home img {
-    width: 135px;
-    height: 135px;
+    width: 115px;
+    height: 115px;
     object-fit: cover;
     border-radius: 50%;
 }
 
 .at-home p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 100;
     line-height: 1;
     padding-left: 1rem;
@@ -618,7 +613,11 @@ section on Classes page*/
     justify-self: center;
 }
 
-
+.training-options-classes h4 {
+    font-weight: 400;
+    font-variant: small-caps;
+    margin-bottom: 2rem;
+}
 
 /* FOOTER ON CLASSES PAGE */
 
