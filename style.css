@@ -178,6 +178,20 @@ nav ul li a {
     margin-bottom: var(--margin-bottom-headings);
 }
 
+.thin-font-heading-home-page h1 span {
+    font-weight: 100;
+    font-size: 2.7rem;
+    
+}
+
+.thin-font-heading-home-page li {
+    font-size: 1rem;
+}
+
+.thin-font-heading-home-page i {
+    font-size: 1.4rem;
+}
+
 .skewed-border {
     border-bottom: 1px solid rgb(19, 16, 16);
     transform: rotate(-3deg);
@@ -185,7 +199,7 @@ nav ul li a {
     margin: 0 auto;
 }
 
-.experties {
+/* .experties {
     display: grid;
     grid-template-columns: repeat(2, 1fr);       
 }
@@ -193,20 +207,69 @@ nav ul li a {
 .experties li {
     padding: 1.2rem;
     margin: 0;
+    font-size: .9rem;
 }
 
 .experties li:nth-child(1) {
     border-top: 1px solid black;
-    /* border-bottom: 1px solid black; */  
     border-radius: 50%;
     
 }
 
 .experties li:nth-child(4) {
-    border-top: 1px solid black;
-    /* border-bottom: 1px solid black; */    
+    border-top: 1px solid black;  
     border-radius: 50%;
     
+} */
+
+.container-cards h1 {
+    color: #fff;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 10px;
+    font-weight: 200;
+    font-size: 1.3rem;
+    text-align: right;
+}
+
+.level3 {
+    background: url(images/personal-trainer.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(57, 65, 57, .8);
+    background-blend-mode: multiply;
+}
+
+.level2 {
+    background: url(images/kettlebells.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(57, 65, 57, .8);
+    background-blend-mode: multiply;
+ 
+}
+
+.circuit-training {
+    background: url(images/circuit.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(57, 65, 57, .8);
+    background-blend-mode: multiply;
+
+}
+
+.nutrition-award {
+    background: url(images/nutrition.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(57, 65, 57, .8);
+    background-blend-mode: multiply;
+}
+
+.nutrition-award h1 {
+    text-align: center;
+    padding-left: 10px;
+    width: 70%;
 }
 
 /* STYLES FOR THE TESTIMONIALS SECTION */
@@ -405,7 +468,7 @@ nav ul li a {
     padding: .9rem;
     background-color: rgba(121, 209, 183, 0.815);
     color: rgb(54, 54, 54);
-    margin: 1rem 0 1rem 0;  
+    margin: 0 0 2rem 0;  
     font-weight: 500;
     
 }
@@ -589,21 +652,21 @@ section on Classes page*/
     line-height: 1.2;
 }
 
-.at-home {
+.section-with-circle-images {
     margin-top: var(--margin-top-headings);
     margin-bottom: 4rem;
     display: flex;
     justify-content: space-between;
 }
 
-.at-home img {
+.section-with-circle-images img {
     width: 115px;
     height: 115px;
     object-fit: cover;
     border-radius: 50%;
 }
 
-.at-home p {
+.section-with-circle-images p {
     font-size: 1.5rem;
     font-weight: 100;
     line-height: 1;
@@ -614,8 +677,9 @@ section on Classes page*/
 }
 
 .training-options-classes h4 {
-    font-weight: 400;
-    font-variant: small-caps;
+    font-size: 1.3rem;
+    font-weight: 200;
+    line-height: 1.4;
     margin-bottom: 2rem;
 }
 

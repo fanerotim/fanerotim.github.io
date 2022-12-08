@@ -177,3 +177,63 @@ html {
         font-size: 7rem;
     }
 }
+
+
+/* STYLES FOR CARDS */
+
+.container-cards {
+    margin: 5rem auto;
+    
+}
+
+.container-cards h1 {
+    color: #fff;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 10px;
+    font-weight: 200;
+    font-size: 1.3rem;
+    text-align: right;
+}
+
+.level3 {
+    background: url(personal-trainer.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(57, 65, 57, .8);
+    background-blend-mode: multiply;
+}
+
+.level2 {
+    background: url(kettlebells.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(57, 65, 57, .8);
+    background-blend-mode: multiply;
+ 
+}
+
+.circuit-training {
+    background: url(circuit.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(57, 65, 57, .8);
+    background-blend-mode: multiply;
+
+}
+
+.nutrition-award {
+    background: url(nutrition.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(57, 65, 57, .8);
+    background-blend-mode: multiply;
+}
+
+.nutrition-award h1 {
+    text-align: center;
+    padding-left: 10px;
+    width: 70%;
+}
+
+
