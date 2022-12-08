@@ -227,16 +227,17 @@ nav ul li a {
     padding-top: 3rem;
     padding-bottom: 3rem;
     padding-right: 10px;
+    padding-left: 1rem;
     font-weight: 200;
     font-size: 1.3rem;
-    text-align: right;
+    text-align: left;
 }
 
 .level3 {
     background: url(images/personal-trainer.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: rgba(57, 65, 57, .8);
+    background-color: rgba(57, 65, 57);
     background-blend-mode: multiply;
 }
 
@@ -244,7 +245,7 @@ nav ul li a {
     background: url(images/kettlebells.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: rgba(57, 65, 57, .8);
+    background-color: rgba(57, 65, 57);
     background-blend-mode: multiply;
  
 }
@@ -253,7 +254,7 @@ nav ul li a {
     background: url(images/circuit.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: rgba(57, 65, 57, .8);
+    background-color: rgba(57, 65, 57);
     background-blend-mode: multiply;
 
 }
@@ -262,14 +263,8 @@ nav ul li a {
     background: url(images/nutrition.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: rgba(57, 65, 57, .8);
+    background-color: rgba(57, 65, 57);
     background-blend-mode: multiply;
-}
-
-.nutrition-award h1 {
-    text-align: center;
-    padding-left: 10px;
-    width: 70%;
 }
 
 /* STYLES FOR THE TESTIMONIALS SECTION */
