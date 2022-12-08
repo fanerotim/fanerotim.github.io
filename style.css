@@ -237,7 +237,7 @@ nav ul li a {
     background: url(images/personal-trainer.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: rgba(57, 65, 57);
+    background-color: rgba(57, 65, 57, .7);
     background-blend-mode: multiply;
 }
 
@@ -245,7 +245,7 @@ nav ul li a {
     background: url(images/kettlebells.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: rgba(57, 65, 57);
+    background-color: rgba(57, 65, 57, .7);
     background-blend-mode: multiply;
  
 }
@@ -254,7 +254,7 @@ nav ul li a {
     background: url(images/circuit.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: rgba(57, 65, 57);
+    background-color: rgba(57, 65, 57, .7);
     background-blend-mode: multiply;
 
 }
@@ -263,7 +263,7 @@ nav ul li a {
     background: url(images/nutrition.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: rgba(57, 65, 57);
+    background-color: rgba(57, 65, 57, .7);
     background-blend-mode: multiply;
 }
 
