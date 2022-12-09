@@ -159,6 +159,7 @@ nav ul li a {
 
 .about-me ul {
     list-style-type: none;
+    
 }
 
 
@@ -318,7 +319,7 @@ nav ul li a {
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900; 
     content: '\f10d';
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: var(--testimonial-quotes-clr);
     position: absolute;
     top: -17%; 
@@ -326,18 +327,18 @@ nav ul li a {
     grid-column: 2 / 3; 
     padding-right: 1rem;
     overflow: hidden;
-    transform: rotate(-3deg);
+    transform: rotate(-10deg);
 }
 
  .testimonials-card p::after {
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900; 
     content: '\f10e';
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: var(--testimonial-quotes-clr);
     position: absolute;
     padding-left: 1rem;
-    transform: rotate(-3deg); 
+    transform: rotate(-10deg); 
 }
 
 .testimonials-card h3 {
@@ -378,7 +379,7 @@ nav ul li a {
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900; 
     content: '\f10d';
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: var(--testimonial-quotes-clr);
     position: absolute;
     top: -17%;
@@ -386,18 +387,18 @@ nav ul li a {
     grid-column: 1 / 2;
     padding-right: 1rem;
     overflow-x: hidden;
-    transform: rotate(3deg);
+    transform: rotate(10deg);
 }
 
 .testimonials-card-img-right p::after {
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900; 
     content: '\f10e';
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: var(--testimonial-quotes-clr);
     position: absolute;
     padding-left: 1rem;
-    transform: rotate(3deg);
+    transform: rotate(10deg);
 }
 
 .testimonials-card-img-right h3 {
@@ -582,10 +583,10 @@ section on Classes page*/
     font-weight: 100;
 }
 
-.plans-and-pricing p {
-    font-weight: 300;
-    font-size: .9rem;
-    margin-top: var(--margin-top-headings);
+.classes-description-paragraphs {
+    margin-top: 1.5rem;
+    font-weight: 200;
+    font-size: 1.1rem;
 }
 
 .plans-heading p::first-letter {
@@ -654,8 +655,8 @@ section on Classes page*/
 }
 
 .section-with-circle-images {
-    margin-top: var(--margin-top-headings);
-    margin-bottom: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     display: flex;
     justify-content: space-between;
 }
@@ -668,13 +669,12 @@ section on Classes page*/
 }
 
 .section-with-circle-images p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 100;
     line-height: 1;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    /* padding-left: 1rem;
+    padding-right: 1rem; */
     align-self: center;
-    justify-self: center;
 }
 
 .training-options-classes h4 {
