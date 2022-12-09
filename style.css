@@ -127,14 +127,14 @@ nav ul li a {
 }
 
 .about-me .about-me-heading {
-    font-weight: 200; 
+    font-weight: 100; 
     margin-top: 1.5rem;
 }
 
 .about-me h1:nth-child(2) {
     margin-bottom: var(--margin-bottom-headings);
     font-weight: bold;
-    margin-top: 0;
+    margin-top: .4rem;
 }
 
 .about-me li {
@@ -186,12 +186,6 @@ nav ul li a {
     margin-top: var(--margin-top-headings);
 }
 
-.thin-font-heading-home-page h1 span {
-    font-weight: 100;
-    font-size: 3.2rem;
-    
-}
-
 .thin-font-heading-home-page li {
     font-size: 1.2rem;
     font-weight: 200;
@@ -204,7 +198,7 @@ nav ul li a {
 .skewed-border {
     border-bottom: .1rem solid rgb(19, 16, 16);
     /* transform: rotate(-3deg); */
-    width: 15%;
+    width: 7%;
 }
 
 /* .experties {
@@ -424,7 +418,7 @@ nav ul li a {
     /*margin-top: 1rem;*/    
 }
 
-.chevron-p-and-o-training::before {
+/* .chevron-p-and-o-training::before {
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900; 
     content: '\f078';
@@ -433,7 +427,7 @@ nav ul li a {
     display: block;
     text-align: center;
     animation: 1.2s infinite alternate bounceUpDown; 
-}
+} */
 
 /* Animation for the Chevron */
 
@@ -455,7 +449,8 @@ nav ul li a {
     background-image: url(images/classes-bg-image.jpg);
     background-size: cover;
     margin-top: 2rem;
-   
+    background-color: rgba(57, 65, 57, .4);
+    background-blend-mode: multiply;
 }
 
 .personal-and-online-training h1 {
