@@ -8,7 +8,7 @@
     --lh-section-headings: 1;
 
     --margin-bottom-headings: 1.5rem;
-    --margin-top-headings: 2rem;
+    --margin-top-headings: 1.5rem;
 }
 
 /* GENERAL RESET STYLES*/
@@ -114,25 +114,26 @@ nav ul li a {
     margin-bottom: 1.2rem;
 }
 
+.about-me p {
+    font-weight: 200;
+}
+
 .about-me h1 {
     font-size: var(--fs-section-headings);
     line-height: var(--lh-section-headings);
     color: rgb(35, 41, 41);
     font-weight: 300;
+    margin-top: var(--margin-top-headings);
 }
 
 .about-me .about-me-heading {
     font-weight: 200; 
+    margin-top: 1.5rem;
 }
 
 .about-me h1:nth-child(2) {
     margin-bottom: var(--margin-bottom-headings);
-}
-
-.about-me p, li {
-    color: rgba(0, 0, 0, .9);
-    font-size: .9rem;
-    font-weight: 300;
+    font-weight: bold;
 }
 
 .about-me li {
@@ -152,6 +153,7 @@ nav ul li a {
 
 .about-me p:nth-of-type(3) {
     margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .about-me ul {
