@@ -134,6 +134,7 @@ nav ul li a {
 .about-me h1:nth-child(2) {
     margin-bottom: var(--margin-bottom-headings);
     font-weight: bold;
+    margin-top: 0;
 }
 
 .about-me li {
