@@ -236,4 +236,13 @@ html {
     width: 70%;
 }
 
+.svg-test {
+    border: 1px solid green;
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    background-image: url(close-x.png);
+    background-repeat: no-repeat;
+}
+
 
