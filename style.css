@@ -730,7 +730,7 @@ section on Classes page*/
 
 .contact-layout-grid {
     display: grid;
-    grid-template-rows: 18rem auto 9rem;
+    grid-template-rows: 18rem auto auto 9rem;
 }
 
 .contact-header-bg {
@@ -745,6 +745,7 @@ section on Classes page*/
     line-height: var(--lh-section-headings);
     text-transform: uppercase;
     margin: var(--margin-top-headings) 0 var(--margin-bottom-headings) 0;
+    grid-row: 2 / 3;
 }
 
 .contact-main h1 span {
@@ -757,7 +758,7 @@ section on Classes page*/
     font-weight: 200;
 }
 
-.contact-main h2 {
+.phone h2 {
     font-size: 1.2rem;
     font-weight: 200;
     padding: 0rem 4rem;
@@ -765,14 +766,15 @@ section on Classes page*/
 
 .phone {
     margin-bottom: var(--margin-bottom-headings);
-    background: url(images/torn-paper1.png);
+    background: url(images/torn-paper3.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     padding: 7rem 0;
+    grid-row: 3 / 4;
 }
 
 .contact-social-media i {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: black;
     margin-bottom: var(--margin-bottom-headings);
 }
@@ -780,7 +782,11 @@ section on Classes page*/
 .contact-social-media {
     display: flex;
     justify-content: end;
+    align-items: end;
     gap: .5rem;
+    margin-right: 5rem;
+    width: 50%;
+    height: 100%;
 }
 
 .phone h2:first-child::before {
@@ -807,7 +813,7 @@ section on Classes page*/
 /* FOOTER ON CONTACT PAGE */
 
 .contact-layout-grid footer {
-    grid-row: 3 / 4;
+    grid-row: 4 / 5;
 }
 
 /* STYLES FOR GALLERY PAGE */
