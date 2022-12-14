@@ -39,7 +39,6 @@ html {
 .home-page-grid {
     display: grid;
     grid-template-rows: 18rem auto auto auto auto auto 9rem;
-    background: rgba(225, 250, 242, 0.815);
 }
 
 .home-page-background-hero-image {
@@ -587,7 +586,6 @@ LOGO AND HERO IMAGE ON "CLASSES" PAGE */
     display: grid;
     /* grid-template-rows: 26.25rem 1fr 315px 11rem; */
     grid-template-rows: 18rem auto 9rem;
-    background: rgba(225, 250, 242, 0.815);
 }
 
 .classes-hero-background {
@@ -733,7 +731,6 @@ section on Classes page*/
 .contact-layout-grid {
     display: grid;
     grid-template-rows: 18rem auto 9rem;
-    background: rgba(225, 250, 242, 0.815);
 }
 
 .contact-header-bg {
@@ -763,24 +760,41 @@ section on Classes page*/
 .contact-main h2 {
     font-size: 1.2rem;
     font-weight: 200;
+    padding: 0rem 4rem;
 }
 
-.contact-main h2:last-child {
+.phone {
     margin-bottom: var(--margin-bottom-headings);
+    background: url(images/torn-paper1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 7rem 0;
+}
+
+.contact-social-media i {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: var(--margin-bottom-headings);
+}
+
+.contact-social-media {
+    display: flex;
+    justify-content: end;
+    gap: .5rem;
 }
 
 .phone h2:first-child::before {
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900; 
     content: "\f095";
-    margin-right: 1rem;
+    margin-right: .5rem;
 }
 
 .phone h2:nth-child(2)::before {
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900; 
     content: "\f0e0";
-    margin-right: 1rem;
+    margin-right: .5rem;
 }
 
 .phone h2:nth-child(3)::before {
@@ -801,7 +815,6 @@ section on Classes page*/
 .gallery-page-grid {
     display: grid;
     grid-template-rows: 18rem auto 9rem;
-    background: rgba(225, 250, 242, 0.815);
 }
 
 .gallery-bg-image {
