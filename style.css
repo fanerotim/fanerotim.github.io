@@ -39,6 +39,7 @@ html {
 .home-page-grid {
     display: grid;
     grid-template-rows: 18rem auto auto auto auto auto 9rem;
+    background: rgba(225, 250, 242, 0.815);
 }
 
 .home-page-background-hero-image {
@@ -586,6 +587,7 @@ LOGO AND HERO IMAGE ON "CLASSES" PAGE */
     display: grid;
     /* grid-template-rows: 26.25rem 1fr 315px 11rem; */
     grid-template-rows: 18rem auto 9rem;
+    background: rgba(225, 250, 242, 0.815);
 }
 
 .classes-hero-background {
@@ -731,10 +733,11 @@ section on Classes page*/
 .contact-layout-grid {
     display: grid;
     grid-template-rows: 18rem auto 9rem;
+    background: rgba(225, 250, 242, 0.815);
 }
 
 .contact-header-bg {
-    background-image: url(images/get-in-touch.jpg);
+    background-image: url(images/contact-phone.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -798,15 +801,14 @@ section on Classes page*/
 .gallery-page-grid {
     display: grid;
     grid-template-rows: 18rem auto 9rem;
+    background: rgba(225, 250, 242, 0.815);
 }
 
 .gallery-bg-image {
     grid-row: 1 / 2;
-    background: url(images/group1.jpg);
-    background-color: rgba(131, 131, 131, .6);
-    background-blend-mode: darken;
+    background: url(images/about-cropped.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;  
 }
 
 .gallery-page-main {
