@@ -802,7 +802,7 @@ section on Classes page*/
 
 .gallery-bg-image {
     grid-row: 1 / 2;
-    background: url(images/group-class.jpg);
+    background: url(images/group1.jpg);
     background-color: rgba(131, 131, 131, .6);
     background-blend-mode: darken;
     background-size: cover;
