@@ -4,11 +4,11 @@
     --testimonial-quotes-clr: rgba(95, 95, 95, 0.4);
     
     --fw-section-headings: 200;
-    --fs-section-headings: 3rem;
-    --lh-section-headings: 1;
+    --fs-section-headings: 3.5rem;
+    --lh-section-headings: .95;
 
     --margin-bottom-headings: 1.5rem;
-    --margin-top-headings: 1.5rem;
+    --margin-top-headings: 2rem;
 }
 
 /* GENERAL RESET STYLES*/
@@ -104,7 +104,7 @@ nav ul.active {
     top: 0;
     width: 90%;
     height: 100vh;
-    background: rgba(148, 219, 180, 0.96);
+    background: linear-gradient(rgba(148, 219, 180, 0.96), rgba(202, 253, 228, 0.96));
     z-index: 3;
     opacity: 1;
     transition: 350ms ease-in;
@@ -142,8 +142,8 @@ nav ul li a {
 
 .about-me {
     grid-row: 2 / 3;
-    margin-top: 1.2rem;
-    margin-bottom: 1.2rem;
+    /* margin-top: 1.2rem; */
+    /* margin-bottom: 1.2rem; */
 }
 
 .about-me p {
@@ -219,20 +219,31 @@ nav ul li a {
     margin-top: var(--margin-top-headings);
 }
 
+/* .thin-font-heading-home-page h1 span {
+    font-weight: 100;
+} */
+
 .thin-font-heading-home-page li {
     font-size: 1.2rem;
     font-weight: 200;
 }
 
 .thin-font-heading-home-page i {
-    font-size: 1rem;
+    font-size: 1.3rem;
+    margin-left: .2rem;
 }
 
-.skewed-border {
-    border-bottom: .1rem solid rgb(19, 16, 16);
-    /* transform: rotate(-3deg); */
-    width: 7%;
+.specialist-areas {
+    padding: .5rem 0;
+    /* background-color: rgb(217, 255, 217, .4); */
+    box-shadow: .8rem 0rem 1.2rem rgba(171, 218, 183, 0.4);   
 }
+
+/* .skewed-border {
+    margin-top: 3rem;
+    border-bottom: .1rem solid rgb(19, 16, 16);
+    width: 7%;
+} */
 
 /* .experties {
     display: grid;
@@ -323,14 +334,15 @@ nav ul li a {
 }
 
 .testimonials-card {
-    width: 100%;
-    background-color: rgb(156, 190, 180);
+    width: 90%;
+    /* background-color: rgb(156, 190, 180); */
+    box-shadow: .5rem .5rem .9rem rgb(156, 190, 180);
     display: grid;
     grid-template-columns: 100px 50px 1fr;
     grid-template-rows: repeat(2, 70px);
     position: relative;
     color: black;
-    margin: 2rem 0;
+    margin: 2rem auto;
 }
 
 .testimonials-card img {
@@ -384,7 +396,10 @@ nav ul li a {
 /* Testimonials with images on the right */
 
 .testimonials-card-img-right {
-    background: rgb(200, 223, 214);
+    width: 90%;
+    
+    margin: 0rem auto;
+    /* background: rgb(200, 223, 214); */
     display: grid;
     grid-template-columns: 50px 1fr 100px;
     grid-template-rows: repeat(2, 70px);
@@ -464,7 +479,7 @@ nav ul li a {
 
 /* Animation for the Chevron */
 
-@keyframes bounceUpDown {
+/* @keyframes bounceUpDown {
     from {
         transform: translateY(-10px);
     }
@@ -472,18 +487,20 @@ nav ul li a {
     to {
         transform: translateY(10px);
     }
-}
+} */
 
 /* end of animation */
 
 .third-image {
-    width: 100vw;
-    height: 60vh;
+    width: 85vw;
+    height: 50vh;
     background-image: url(images/classes-bg-image.jpg);
     background-size: cover;
-    margin-top: 2rem;
-    background-color: rgba(57, 65, 57, .4);
-    background-blend-mode: multiply;
+    /* background-position: top; */
+    margin: 0 auto;
+    border-radius: 15%;
+    /* background-color: rgba(57, 65, 57, .4);
+    background-blend-mode: multiply; */
 }
 
 .personal-and-online-training h1 {
@@ -492,6 +509,15 @@ nav ul li a {
     font-size: var(--fs-section-headings);
     line-height: var(--lh-section-headings);
     text-transform: uppercase;
+}
+
+.personal-and-online-training p {
+    margin-top: 1.5rem;
+}
+
+.personal-and-online-training p span {
+    font-size: 1.05rem;
+    font-weight: bold;
 }
 
 .button {
@@ -734,7 +760,7 @@ section on Classes page*/
 }
 
 .contact-header-bg {
-    background-image: url(images/contact-phone.jpg);
+    background-image: url(images/contact-us1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -760,33 +786,35 @@ section on Classes page*/
 
 .phone h2 {
     font-size: 1.2rem;
-    font-weight: 200;
+    font-weight: 400;
     padding: 0rem 4rem;
 }
 
 .phone {
     margin-bottom: var(--margin-bottom-headings);
-    background: url(images/torn-paper3.png);
-    background-size: 100% 100%;
+    background: url(images/sticky-note.png);
+    background-size: 90% 90%;
+    background-position: center;
     background-repeat: no-repeat;
-    padding: 7rem 0;
+    padding: 5rem 0;
     grid-row: 3 / 4;
+    
+}
+
+.contact-social-media {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 23%;
+    gap: 1rem;
+    margin-right: 5rem;
+    width: 50%;
+    height: 100%;
 }
 
 .contact-social-media i {
     font-size: 2.5rem;
     color: black;
-    margin-bottom: var(--margin-bottom-headings);
-}
-
-.contact-social-media {
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    gap: .5rem;
-    margin-right: 5rem;
-    width: 50%;
-    height: 100%;
 }
 
 .phone h2:first-child::before {
