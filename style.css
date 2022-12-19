@@ -736,11 +736,19 @@ section on Classes page*/
 }
 
 .training-options-classes h4 {
-    font-size: 1.3rem;
-    font-weight: 200;
+    font-size: 1rem;
+    font-weight: 400;
     line-height: 1.4;
     margin-bottom: 2rem;
 }
+
+.training-options-classes h4::first-letter {
+    font-variant: small-caps;
+    line-height: 1rem;
+    font-size: 1.7rem;
+}
+
+
 
 /* FOOTER ON CLASSES PAGE */
 
@@ -842,14 +850,14 @@ main {
     margin-left: auto;
     background-color: rgb(250, 246, 246);
     position: fixed;
-    bottom: 20%;
+    bottom: 35%;
     right: 0;
     z-index: 1;
 }
 
 .contact-social-media i {
     font-size: 1.8rem;
-    color: black;
+    color: rgb(52, 75, 65);
 }
 
 /* .phone h2:nth-child(3)::before {
@@ -889,6 +897,7 @@ grid-row: 2 / 3;
     font-weight: var(--fw-section-headings);
     line-height: var(--lh-section-headings);
     margin: var(--margin-top-headings) 0 var(--margin-bottom-headings) 0;
+    text-transform: uppercase;
 }
 
 .gallery-page-main p {
