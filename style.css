@@ -25,6 +25,7 @@ img {
 
 html {
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /*CONTAINER THAT HOLDS THE TEXT AND LAYOUT (APART FROM HERO SECTIONS) OF THE PAGES TOGETHER */
@@ -911,8 +912,33 @@ grid-row: 2 / 3;
     border-radius: 2rem;
     margin-bottom: .3rem;
 }
-    
 
+.gallery-page-main h2 {
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin: var(--margin-top-headings) 0 var(--margin-bottom-headings) 0;
+    line-height: 1.25;
+}
+
+.back-to-top {
+    padding: .25rem .75rem;
+    /* background: rgba(60, 102, 70, 0.6); */
+    background: rgba(45, 185, 78, 0.6);
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    margin-bottom: 1.5rem;
+    border-radius: .5rem;
+    margin-right: 50%;
+    transform: translateX(50%);
+    z-index: 30;
+}
+
+.back-to-top a {
+    text-decoration: none;
+    color: white;
+    font-size: .75rem;
+}
 
 /* STYLES FOR FOOTER ON GALLERY PAGE */
 
