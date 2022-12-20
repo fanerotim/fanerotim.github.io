@@ -14,6 +14,7 @@
     --margin-bottom-headings-large: 3rem;
 
     --clr-thin-headings: rgba(34, 107, 51, 0.6);
+    --clr-headings-watermark: rgba(34, 148, 77, 0.2);
     --fw-thin-headings: 100;
 }
 
@@ -171,11 +172,18 @@ nav ul li a {
     color: var(--clr-thin-headings);
 }
 
+.about-me-heading:first-letter {
+    font-size: 5.5rem;
+    letter-spacing: -.8rem;
+    color: var(--clr-headings-watermark);
+    font-weight: 800;
+}
+
 .about-me h1:nth-child(2) {
     margin-bottom: var(--margin-bottom-headings);
     font-weight: 800;
     margin-top: .4rem;
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 .about-me li {
@@ -228,35 +236,31 @@ nav ul li a {
     margin-top: var(--margin-top-headings);
 }
 
-.heading-styles h1::first-letter
-/* .heading-styles h1 span */ {
+.heading-styles h1::first-letter{
     font-size: 5.5rem;
     font-weight: bold;
     letter-spacing: -.9rem;
-    color: rgb(120, 153, 120);
+    color: var(--clr-headings-watermark);
     line-height: .8;
-    /* font-family: 'Raleway', sans-serif; */
 }
 
-.heading-styles-testimonials h1::first-letter
-/* .heading-styles h1 span */ {
+.heading-styles-testimonials h1::first-letter {
     font-size: 5.5rem;
     font-weight: bold;
     letter-spacing: -1.5rem;
-    color: rgb(120, 153, 120);
+    color: var(--clr-headings-watermark);
     line-height: .8;
-    /* font-family: 'Raleway', sans-serif; */
 }
 
-.heading-styles-personal h1::first-letter
-/* .heading-styles h1 span */ {
+.heading-styles-personal h1::first-letter {
     font-size: 5.5rem;
     font-weight: bold;
     letter-spacing: -1rem;
-    color: rgb(120, 153, 120);
+    color: var(--clr-headings-watermark);
     line-height: .8;
-    /* font-family: 'Raleway', sans-serif; */
 }
+
+
 
 .thin-font-heading-home-page li {
     font-size: 1.2rem;
@@ -683,8 +687,13 @@ section on Classes page*/
 
 .plans-and-pricing h1 span {
     font-weight: var(--fw-thin-headings);
-    color: var(--clr-thin-headings);
-    
+    color: var(--clr-thin-headings);   
+}
+
+.online-training-section h1,
+.one-to-one-section h1,
+.corporate-package-section h1 {
+    margin-top: 0;
 }
 
 .classes-description-paragraphs {
@@ -702,10 +711,10 @@ section on Classes page*/
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900; 
     content: '\31.';
-    font-size: 3.5rem;
+    font-size: 5.5rem;
     display: block;
     margin-top: 1.5rem;
-    color:rgb(125, 192, 153);
+    color: var(--clr-headings-watermark);
 }
 
 .short-dividing-image-online {
@@ -721,10 +730,10 @@ section on Classes page*/
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900; 
     content: '\32.';
-    font-size: 3.5rem;
+    font-size: 5.5rem;
     display: block;
     margin-top: 1.5rem;
-    color:rgb(125, 192, 153);
+    color: var(--clr-headings-watermark);
 }
 
 .short-dividing-image-group {
@@ -740,10 +749,10 @@ section on Classes page*/
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900; 
     content: '\33.';
-    font-size: 3.5rem;
+    font-size: 5.5rem;
     display: block;
     margin-top: 1.5rem;
-    color:rgb(125, 192, 153);
+    color: var(--clr-headings-watermark);
 }
 
 .short-dividing-image-corporate {
@@ -792,7 +801,6 @@ section on Classes page*/
 }
 
 .training-options-classes h4::first-letter {
-
     font-size: 1.3rem;
 }
 
@@ -947,7 +955,7 @@ grid-row: 2 / 3;
     line-height: var(--lh-section-headings);
     margin: var(--margin-top-headings) 0 var(--margin-bottom-headings) 0;
     text-transform: uppercase;
-    border-left: .5rem solid rgb(113, 156, 113);
+    border-left: .5rem solid var(--clr-headings-watermark);
     padding-left: .4rem;
 }
 
