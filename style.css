@@ -10,6 +10,9 @@
     --margin-bottom-headings: 1.5rem;
     --margin-top-headings: 2rem;
 
+    --margin-top-headings-large: 3rem;
+    --margin-bottom-headings-large: 3rem;
+
     --clr-thin-headings: rgba(34, 107, 51, 0.6);
     --fw-thin-headings: 100;
 }
@@ -170,8 +173,9 @@ nav ul li a {
 
 .about-me h1:nth-child(2) {
     margin-bottom: var(--margin-bottom-headings);
-    font-weight: bold;
+    font-weight: 800;
     margin-top: .4rem;
+    font-size: 3.5rem;
 }
 
 .about-me li {
@@ -218,30 +222,60 @@ nav ul li a {
 }
 
 .thin-font-heading-home-page h1 {
-    font-weight: var(--fw-section-headings);
+    font-weight: var(--fw-thin-headings);
     line-height: var(--lh-section-headings);
     margin-bottom: var(--margin-bottom-headings);
     margin-top: var(--margin-top-headings);
 }
 
-/* .thin-font-heading-home-page h1 span {
-    font-weight: 100;
-} */
+.heading-styles h1::first-letter
+/* .heading-styles h1 span */ {
+    font-size: 5.5rem;
+    font-weight: bold;
+    letter-spacing: -.9rem;
+    color: rgb(120, 153, 120);
+    line-height: .8;
+    /* font-family: 'Raleway', sans-serif; */
+}
+
+.heading-styles-testimonials h1::first-letter
+/* .heading-styles h1 span */ {
+    font-size: 5.5rem;
+    font-weight: bold;
+    letter-spacing: -1.5rem;
+    color: rgb(120, 153, 120);
+    line-height: .8;
+    /* font-family: 'Raleway', sans-serif; */
+}
+
+.heading-styles-personal h1::first-letter
+/* .heading-styles h1 span */ {
+    font-size: 5.5rem;
+    font-weight: bold;
+    letter-spacing: -1rem;
+    color: rgb(120, 153, 120);
+    line-height: .8;
+    /* font-family: 'Raleway', sans-serif; */
+}
 
 .thin-font-heading-home-page li {
     font-size: 1.2rem;
     font-weight: 200;
+    
 }
 
 .thin-font-heading-home-page i {
     font-size: 1.3rem;
     margin-left: .2rem;
+    
 }
 
 .specialist-areas {
     padding: .5rem 0;
     /* background-color: rgb(217, 255, 217, .4); */
-    box-shadow: .8rem 0rem 1.2rem rgba(171, 218, 183, 0.4);   
+    box-shadow: .8rem 0rem 1.2rem rgba(171, 218, 183, 0.4);
+    box-shadow: .8rem 0rem 1.2rem rgba(28, 148, 112, .3);   
+    
 }
 
 /* .skewed-border {
@@ -284,6 +318,7 @@ nav ul li a {
     text-align: left;
     margin-bottom: .1rem;
     margin-top: 0;
+    
 }
 
 .level3 {
@@ -291,7 +326,7 @@ nav ul li a {
     background-size: cover;
     background-repeat: no-repeat;
     background-color: rgba(57, 65, 57, .7);
-    background-blend-mode: multiply;
+    background-blend-mode: multiply; 
 }
 
 .level2 {
@@ -300,7 +335,6 @@ nav ul li a {
     background-repeat: no-repeat;
     background-color: rgba(57, 65, 57, .7);
     background-blend-mode: multiply;
- 
 }
 
 .circuit-training {
@@ -309,7 +343,6 @@ nav ul li a {
     background-repeat: no-repeat;
     background-color: rgba(57, 65, 57, .7);
     background-blend-mode: multiply;
-
 }
 
 .nutrition-award {
@@ -330,12 +363,12 @@ nav ul li a {
 
 .testimonials h1 {
     text-align: left;
-    font-weight: var(--fw-section-headings);
+    font-weight: var(--fw-thin-headings);
     text-transform: uppercase;
     font-size: var(--fs-section-headings);
     line-height: var(--lh-section-headings);  
-    margin-bottom: var(--margin-bottom-headings);
-    margin-top: var(--margin-top-headings);
+    margin-bottom: var(--margin-bottom-headings-large);
+    margin-top: var(--margin-top-headings-large);
 }
 
 .testimonials-card {
@@ -348,6 +381,11 @@ nav ul li a {
     position: relative;
     color: black;
     margin: 2rem auto;
+    border-radius: .5rem;
+}
+
+.testimonials-card:last-child {
+    margin-bottom: 0;
 }
 
 .testimonials-card img {
@@ -509,8 +547,9 @@ nav ul li a {
 }
 
 .personal-and-online-training h1 {
-    margin-bottom: var(--margin-bottom-headings);
-    font-weight: var(--fw-section-headings);
+    margin-bottom: var(--margin-bottom-headings-large);
+    margin-top: var(--margin-top-headings-large);
+    font-weight: var(--fw-thin-headings);
     font-size: var(--fs-section-headings);
     line-height: var(--lh-section-headings);
     text-transform: uppercase;
@@ -908,6 +947,8 @@ grid-row: 2 / 3;
     line-height: var(--lh-section-headings);
     margin: var(--margin-top-headings) 0 var(--margin-bottom-headings) 0;
     text-transform: uppercase;
+    border-left: .5rem solid rgb(113, 156, 113);
+    padding-left: .4rem;
 }
 
 .gallery-page-main p {
