@@ -73,7 +73,7 @@ nav {
 button {
     all: unset;
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
     transform: rotate(90deg);
     transition: transform 250ms ease-in;
 }
@@ -100,7 +100,7 @@ nav ul {
     position: absolute;
     opacity: 0;
     right: 0rem;
-    top: -25rem;
+    top: -35rem;
     width: 90%;
     height: 100vh;
     transition: 350ms linear;
@@ -112,7 +112,7 @@ nav ul.active {
     top: 0;
     width: 90%;
     height: 100vh;
-    background: linear-gradient(rgba(148, 219, 180, 0.96), rgba(202, 253, 228, 0.96));
+    background: rgba(180, 230, 215, 0.95);
     z-index: 3;
     opacity: 1;
     transition: 350ms ease-in;
@@ -128,7 +128,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(0, 0, 0);
+    color: rgb(13, 117, 91);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 3rem; 
