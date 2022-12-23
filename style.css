@@ -111,8 +111,8 @@ nav ul.active {
     right: 0;
     top: 0;
     width: 90%;
-    height: 80vh;
-    background: rgba(228, 236, 234, .75);
+    height: 100vh;
+    background: rgba(169, 204, 186, 0.75);
     background-image: url(images/strength.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -120,8 +120,7 @@ nav ul.active {
     z-index: 3;
     opacity: 1;
     transition: 350ms ease-in;
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+
 }
 
 nav ul li {
@@ -134,11 +133,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(11, 49, 40);
+    color: rgb(4, 61, 50);
+    color: black;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 3rem; 
-    font-weight: bold;
+    font-size: 2rem; 
+    font-weight: 100;
+    letter-spacing: .1rem;
 }
 
 /* STYLES FOR THE LOGO OF THE WEBSITE */ 
