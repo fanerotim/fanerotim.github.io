@@ -68,6 +68,8 @@ nav {
     width: 100%;
     height: 5rem; 
     overflow: hidden;
+    /* background-color: rgba(65, 61, 61, .2); */
+    margin-bottom: 2rem;
 }
 
 button {
@@ -101,7 +103,7 @@ nav ul {
     opacity: 0;
     right: 0rem;
     top: -35rem;
-    width: 90%;
+    width: 85%;
     height: 100vh;
     transition: 350ms linear;
 }
@@ -110,13 +112,10 @@ nav ul.active {
     position: absolute;
     right: 0;
     top: 0;
-    width: 90%;
+    width: 85%;
     height: 100vh;
-    background: rgba(255, 255, 255, 0.5);
-    background-image: url(images/strength.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: overlay;
+    background: rgba(147, 202, 189, 0.9);
+    background: rgba(179, 228, 216, 0.9);
     z-index: 3;
     opacity: 1;
     transition: 350ms ease-in;
@@ -129,19 +128,16 @@ nav ul li {
     top: 30%;
     /* opacity: 1; */
     text-align: center;
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
 }
 
 nav ul li a {
     color: black;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 2.5rem; 
+    font-size: 3rem; 
     font-weight: 200;
     font-family: 'Raleway', sans-serif;
-    /* box-shadow: 1.8rem -1.8rem 1rem rgb(72, 75, 74); */
-    
-    padding-left: .5rem;
 }
 
 /* STYLES FOR THE LOGO OF THE WEBSITE */ 
@@ -420,7 +416,7 @@ nav ul li a {
     font-weight: 900; 
     content: '\f10d';
     font-size: 4rem;
-    color: var(--testimonial-quotes-clr);
+    color: var(--clr-headings-watermark);
     position: absolute;
     top: -17%; 
     right: -35%;
@@ -483,7 +479,7 @@ nav ul li a {
     font-weight: 900; 
     content: '\f10d';
     font-size: 4rem;
-    color: var(--testimonial-quotes-clr);
+    color: var(--clr-headings-watermark);
     position: absolute;
     top: -17%;
     left: 10%;
@@ -777,6 +773,7 @@ section on Classes page*/
     font-size: 1.4rem;
     font-weight: 200;
     line-height: 1.2;
+    font-family: 'Raleway', sans-serif;
 }
 
 .section-with-circle-images {
@@ -803,10 +800,11 @@ section on Classes page*/
 }
 
 .training-options-classes h4 {
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: 200;
     line-height: 1.4;
     margin-bottom: 2rem;
+    font-family: 'Raleway', sans-serif;
 }
 
 .training-options-classes h4::first-letter {
@@ -854,8 +852,9 @@ section on Classes page*/
 
 .contact-main p {
     /* margin-bottom: var(--margin-bottom-headings); */
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 200;
+    font-family: 'Raleway', sans-serif;
 }
 
 .phone h2 {
@@ -966,10 +965,11 @@ grid-row: 2 / 3;
 }
 
 .gallery-page-main h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 200;
     margin: var(--margin-top-headings) 0 var(--margin-bottom-headings) 0;
     line-height: 1.25;
+    font-family: 'Raleway', sans-serif;
 }
 
 .back-to-top {
