@@ -16,6 +16,11 @@
     --clr-thin-headings: rgba(34, 107, 51, 0.6);
     --clr-headings-watermark: rgba(34, 148, 77, 0.2);
     --fw-thin-headings: 100;
+
+    /* Tablet Media Query */
+
+    --fs-heading-first-letter-tablet: 15.5rem;
+    --fs-heading-following-letters-tablet: 6rem;
 }
 
 /* GENERAL RESET STYLES*/
@@ -54,6 +59,10 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     grid-row: 1 / 2; 
+}
+
+.quote {
+    display: none;
 }
 
 /* STYLES OF THE NAVIGATION*/
@@ -284,7 +293,6 @@ nav ul li a {
     /* background-color: rgb(217, 255, 217, .4); */
     box-shadow: .8rem 0rem 1.2rem rgba(171, 218, 183, 0.4);
     box-shadow: .8rem 0rem 1.2rem rgba(28, 148, 112, .3);   
-    
 }
 
 /* .skewed-border {
@@ -583,7 +591,7 @@ nav ul li a {
     padding: .8rem 1.1rem;
     background-color: rgba(121, 209, 183, 0.815);
     color: rgb(54, 54, 54);
-    margin-bottom: var(--margin-bottom-headings);
+    margin: 0 0 var(--margin-bottom-headings-large) 0;
 } 
 
 .personal-and-online-training-list img {
@@ -803,7 +811,7 @@ section on Classes page*/
     font-size: 1.4rem;
     font-weight: 200;
     line-height: 1.4;
-    margin-bottom: 2rem;
+    margin: var(--margin-top-headings-large) 0 var(--margin-bottom-headings-large) 0;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -831,7 +839,7 @@ section on Classes page*/
 }
 
 .contact-header-bg {
-    background-image: url(images/get-in-touch.jpg);
+    background-image: url(images/contact.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -944,7 +952,7 @@ grid-row: 2 / 3;
 
 .gallery-page-main h1 {
     font-size: var(--fs-section-headings);
-    font-weight: var(--fw-section-headings);
+    font-weight: var(--fw-thin-headings);
     line-height: var(--lh-section-headings);
     margin: var(--margin-top-headings) 0 var(--margin-bottom-headings) 0;
     text-transform: uppercase;
@@ -953,8 +961,8 @@ grid-row: 2 / 3;
 }
 
 .gallery-page-main p {
-    font-size: .9rem;
-    font-weight: 300;
+    font-size: 1.2rem;
+    font-weight: 200;
     margin-bottom: var(--margin-bottom-headings);
 }
 
@@ -996,4 +1004,212 @@ grid-row: 2 / 3;
 
 .gallery-page-footer {
     grid-row: 3 / 4;
+}
+
+/* STYLES FOR TABLETS */
+
+@media(min-width: 550px) {
+
+    /* GRID LAYOUT OF THE WHOLE PAGE */
+
+    .home-page-grid {
+        grid-template-rows: 33rem auto auto auto;
+    
+    }
+
+    /* HEADER AND NAVIGATION */
+
+    nav ul {
+        opacity: 1;
+        top: 0;
+        font-size: 1rem;
+        gap: 1rem;
+        font-weight: bold;
+        height: 7rem;
+        display: flex;
+        justify-content: end;
+        padding-right: 1.5rem;
+    }
+
+    nav {
+        height: 7rem;
+    }
+
+    ul li {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        align-self: center;
+    }
+
+    nav ul li a {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: black; 
+        position: relative; 
+    }
+
+    nav ul li a:hover,
+    nav ul li a:focus {
+        animation-duration: 1s;
+        animation-name: slidein;
+        transition: all 500ms;
+        
+    }
+
+    nav ul li a:hover::before {
+        content: '';
+        position: absolute;
+        border-top: 2px solid black;
+        animation-duration: 1s;
+        animation-name: slidein;
+        animation-fill-mode: forwards;
+        transition: border-top 350ms;
+    }
+
+
+    @keyframes slidein {
+        from {
+          width: 0%;
+        }
+      
+        to {
+          width: 100%;
+        }
+      }
+    
+
+    .logo img {
+        width: 4rem;
+    }
+    
+    button {
+        display: none;
+    }
+
+    .home-page-background-hero-image {
+        grid-row: 1 / 2; 
+        background: linear-gradient(90deg, rgba(166,244,205,1) 14%, rgba(120,237,202,1) 42%, rgba(179,237,222,1) 70%);
+        background: linear-gradient(90deg, rgba(61,232,101,1) 0%, rgba(53,238,152,1) 0%, rgba(161,227,193,1) 70%);
+        border-bottom-left-radius: 15rem;
+       
+    }
+
+    .home-page-background-hero-image::before {
+        position: absolute;
+        content: open-quote;
+        font-size: 10rem;
+        top: 3rem;
+        left: 1rem;
+        color: rgba(24, 24, 24, 0.5);
+    }
+
+    .quote {
+        display: block;
+        position: absolute;
+        top: 10rem;
+        left: 5rem;
+        width: 70vw;
+        color: rgb(255, 255, 255);
+        z-index: 5;
+        font-size: var(--fs-section-headings);
+        font-weight: 100;
+        text-transform: uppercase;
+        line-height: 1.2;
+        border-bottom-left-radius: 2rem;
+    }
+
+    
+
+    /* SECOND BACKGROUND IMAGE AT THE TOP OF THE PAGE */
+
+    .second-background-image-header {
+        background: url(images/img1.jpg);
+       
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        /* background: rgb(121, 145, 138); */
+        /* height: 53vh; */
+        /* inset: 0; */
+        z-index: 2;
+        height: 23rem;
+        width: 23rem;
+        right: 2rem;
+        top: 17rem;
+        border-radius: 50%;
+
+    }
+
+    /* ABOUT ME SECTION */
+
+    .about-me-background {
+        grid-row: 2 / 3;
+    }
+
+    .column-section {
+        column-count: 2;
+        /* column-width: 200px; */
+        column-gap: 2rem;
+        margin-bottom: 2.5rem;
+        
+    }
+    
+    .about-me-heading:first-letter {
+        font-size: var(--fs-heading-first-letter-tablet);
+        letter-spacing: -1.7rem;
+        color: var(--clr-headings-watermark);
+        font-weight: 800;
+    }
+
+    .about-me .about-me-heading {
+        font-weight: var(--fw-thin-headings);
+        margin-top: 1.5rem;
+        color: var(--clr-thin-headings);
+        font-size: 6rem;
+    }
+
+    .about-me h1:nth-child(2) {
+        margin-bottom: var(--margin-bottom-headings);
+        font-weight: 800;
+        margin-top: .4rem;
+        font-size: 5rem;
+       
+    }
+
+    /* SECOND IMAGE */
+
+    .second-image {
+        grid-row: 3 / 4;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    /* SPECIALIST AREAS */
+
+    .heading-styles h1::first-letter {
+        font-size: var(--fs-heading-first-letter-tablet);
+        letter-spacing: -1.7rem;
+    }
+
+    .heading-styles h1 {
+        font-size: var(--fs-heading-following-letters-tablet);
+        
+    }
+
+    .specialist-areas {
+        width: 20rem;
+    }
+
+    /* TESTIMONIALS */
+    
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .2rem;
+        height: 25rem;
+        
+    }
+
+
 }
