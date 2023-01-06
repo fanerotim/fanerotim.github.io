@@ -295,34 +295,9 @@ nav ul li a {
     box-shadow: .8rem 0rem 1.2rem rgba(28, 148, 112, .3);   
 }
 
-/* .skewed-border {
-    margin-top: 3rem;
-    border-bottom: .1rem solid rgb(19, 16, 16);
-    width: 7%;
-} */
-
-/* .experties {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);       
+.specialist-areas ul p {
+    display: inline;
 }
-
-.experties li {
-    padding: 1.2rem;
-    margin: 0;
-    font-size: .9rem;
-}
-
-.experties li:nth-child(1) {
-    border-top: 1px solid black;
-    border-radius: 50%;
-    
-}
-
-.experties li:nth-child(4) {
-    border-top: 1px solid black;  
-    border-radius: 50%;
-    
-} */
 
 .container-cards h1 {
     color: #fff;
@@ -1045,7 +1020,7 @@ grid-row: 2 / 3;
     nav ul li a {
         font-size: 1.5rem;
         font-weight: bold;
-        color: black; 
+        color: white;
         position: relative; 
     }
 
@@ -1060,7 +1035,7 @@ grid-row: 2 / 3;
     nav ul li a:hover::before {
         content: '';
         position: absolute;
-        border-top: 2px solid black;
+        border-top: 2px solid white;
         animation-duration: 1s;
         animation-name: slidein;
         animation-fill-mode: forwards;
@@ -1090,7 +1065,7 @@ grid-row: 2 / 3;
     .home-page-background-hero-image {
         grid-row: 1 / 2; 
         background: linear-gradient(90deg, rgba(166,244,205,1) 14%, rgba(120,237,202,1) 42%, rgba(179,237,222,1) 70%);
-        background: linear-gradient(90deg, rgba(61,232,101,1) 0%, rgba(53,238,152,1) 0%, rgba(161,227,193,1) 70%);
+        background: linear-gradient(90deg, rgba(53,198,87,1) 0%, rgba(45,184,119,1) 0%, rgba(21,177,97,1) 70%);
         border-bottom-left-radius: 15rem;
        
     }
@@ -1098,10 +1073,11 @@ grid-row: 2 / 3;
     .home-page-background-hero-image::before {
         position: absolute;
         content: open-quote;
-        font-size: 10rem;
-        top: 3rem;
-        left: 1rem;
-        color: rgba(24, 24, 24, 0.5);
+        font-size: 14rem;
+        top: 2.5rem;
+        left: 2rem;
+        color: rgba(24, 24, 24, .6);
+        z-index: 1;
     }
 
     .quote {
@@ -1113,10 +1089,10 @@ grid-row: 2 / 3;
         color: rgb(255, 255, 255);
         z-index: 5;
         font-size: var(--fs-section-headings);
-        font-weight: 100;
+        font-weight: 200;
         text-transform: uppercase;
         line-height: 1.2;
-        border-bottom-left-radius: 2rem;
+        
     }
 
     
@@ -1198,18 +1174,145 @@ grid-row: 2 / 3;
     }
 
     .specialist-areas {
-        width: 20rem;
+       box-shadow: none;
+       margin-top: 5rem;
     }
 
-    /* TESTIMONIALS */
-    
-    .container-cards {
+    .specialist-areas ul {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: .2rem;
-        height: 25rem;
+        grid-template-columns: repeat(2, minmax(230px, 30rem));
+        grid-template-rows: repeat(3, minmax(130px, 7rem));
+        gap: 3rem;
         
     }
 
+    .specialist-areas ul p {
+        display: block;
+        font-size: 1.3rem;
+        padding: .3rem;
+        font-weight: 200;
+    }
 
+    .specialist-areas ul li i {
+        font-size: 4rem;
+        margin-left: 1.5rem;
+        transform:  translateY(-1.5rem);
+    }
+
+
+    .specialist-areas ul li {
+        border-radius: 1.2rem;
+    }
+
+    .specialist-areas ul li:nth-child(1) {
+        /* background: rgb(196, 247, 181); */
+        box-shadow: .5rem -.5rem 2rem rgb(196, 247, 181);
+        transform: rotate(-1deg);
+        
+    }
+
+    .specialist-areas ul li:nth-child(2) {
+        /* background: rgb(205, 241, 220); */
+        box-shadow: .5rem -.5rem 2rem rgb(205, 241, 220);
+        transform: rotate(-1deg);
+    }
+
+    .specialist-areas ul li:nth-child(3) {
+        /* background: rgb(174, 221, 176); */
+        box-shadow: .5rem -.5rem 2rem rgb(174, 221, 176);
+        transform: rotate(1deg);
+       
+    }
+
+    .specialist-areas ul li:nth-child(4) {
+        /* background: rgb(148, 192, 167); */
+        box-shadow: .5rem -.5rem 2rem rgb(148, 192, 167);
+        transform: rotate(1deg);
+    }
+
+    .specialist-areas ul li:nth-child(5) {
+        /* background: rgb(133, 199, 161); */
+        box-shadow: .5rem -.5rem 2rem rgb(133, 199, 161);;
+        transform: rotate(-1deg);
+    }
+
+    /* MY EXPERTIES */
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .7rem;
+        height: 25rem;  
+    }
+
+
+    /* TESTIMONIALS */
+
+    .heading-styles-testimonials h1::first-letter {
+        font-size: var(--fs-heading-first-letter-tablet);
+        letter-spacing: -4rem;
+    }
+
+    .heading-styles-testimonials h1 {
+        font-size: var(--fs-heading-following-letters-tablet);
+    }
+
+    .testimonials-card {
+        width: 60%;
+        margin-left: 10vw;
+        grid-template-columns: 100px 50px 1fr;
+        grid-template-rows: repeat(2, 90px);
+        transform: rotate(-1deg);
+        margin-bottom: 5rem;
+    }
+
+    .testimonials-card-img-right {
+        grid-template-columns: 50px 1fr 100px;
+        grid-template-rows: repeat(2, 90px);
+        margin-left: auto;
+        margin-right: 10vw;
+        transform: rotate(1deg);
+    }
+
+    .testimonials-card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .testimonials-card p {
+        font-size: 1rem;
+    }
+
+    .testimonials-card h3 {
+        font-size: .9rem;
+    }
+
+    /* PERSONAL AND ONLINE TRAINING SECTION */
+
+    .heading-styles-personal h1::first-letter {
+        font-size: var(--fs-heading-first-letter-tablet);
+        letter-spacing: -6.9rem;
+    }
+
+    .heading-styles-personal h1 {
+        font-size: var(--fs-heading-following-letters-tablet);
+    }
+
+    .third-image {
+        background-position: center center;
+    }
+
+    .personal-and-online-training p:nth-child(1),
+    .personal-and-online-training p span:nth-child(1) {
+        width: 65%;
+        font-size: 1.5rem;
+    }
+
+    .personal-and-online-training-list .section-with-circle-images p {
+        font-size: 2.7rem;
+    }
+
+    .personal-and-online-training-list .section-with-circle-images img {
+        width: 255px;
+        height: 255px;
+    }
 }
