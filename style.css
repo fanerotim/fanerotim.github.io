@@ -372,7 +372,7 @@ nav ul li a {
     box-shadow: .5rem .5rem .9rem rgb(156, 190, 180);
     display: grid;
     grid-template-columns: 100px 50px 1fr;
-    grid-template-rows: repeat(2, minmax(70px, auto));
+    grid-template-rows: repeat(2, minmax(6rem, auto));
     position: relative;
     color: black;
     margin: 2rem auto;
@@ -452,10 +452,10 @@ nav ul li a {
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900; 
     content: '\f10d';
-    font-size: 4rem;
+    font-size: 5rem;
     color: var(--clr-headings-watermark);
     position: absolute;
-    top: -3rem;
+    top: -3.5rem;
     left: 0; 
     grid-column: 2 / 3; 
     padding-right: 1rem;
@@ -475,12 +475,11 @@ nav ul li a {
 
 .testimonials-card-img-right {
     width: 90%;
-    
     margin: 0rem auto;
     /* background: rgb(200, 223, 214); */
     display: grid;
     grid-template-columns: 50px 1fr 100px;
-    grid-template-rows: repeat(2, 70px);
+    grid-template-rows: repeat(minmax(6rem, auto));
     position: relative;
 }
 
@@ -1018,6 +1017,7 @@ grid-row: 2 / 3;
 
 @media(min-width: 550px) {
 
+    /* HOME PAGE STYLES */
     /* GRID LAYOUT OF THE WHOLE PAGE */
 
     .home-page-grid {
@@ -1054,6 +1054,7 @@ grid-row: 2 / 3;
         font-size: 1.5rem;
         font-weight: bold;
         color: rgb(3, 3, 3);
+        /* color: rgb(255, 255, 255); */
         position: relative; 
     }
 
@@ -1210,13 +1211,12 @@ grid-row: 2 / 3;
     }
 
     .heading-styles h1 {
-        font-size: var(--fs-heading-following-letters-tablet);
-        
+        font-size: var(--fs-heading-following-letters-tablet);   
     }
 
     .specialist-areas {
        box-shadow: none;
-       margin-top: 5rem;
+       margin-top: 2rem;
        /* border-bottom: .1rem solid rgb(56, 70, 62); */
     }
 
@@ -1281,6 +1281,15 @@ grid-row: 2 / 3;
 
     .heading-styles-testimonials h1 {
         font-size: var(--fs-heading-following-letters-tablet);
+        margin-bottom: 5rem;
+    }
+
+    .testimonials-card-1 {
+        transform: rotate(-1deg);
+    }
+
+    .testimonials-card {
+        margin-top: 5rem;
     }
 
     .testimonials-card img {
@@ -1334,5 +1343,29 @@ grid-row: 2 / 3;
         font-size: 1.2rem;
         padding: 1rem 2rem;
         border-radius: 2rem;
+    }
+
+    /* END OF HOME PAGE STYLES */
+
+    /* CLASSES PAGE STYLES FOR TABLET */
+
+    .classes-layout-grid {
+        grid-template-rows: 33rem auto 12rem; 
+    }
+
+    .plans-heading h1 {
+        font-size: var(--fs-heading-following-letters-tablet);
+    }
+
+    .plans-heading p::first-letter {
+        font-size: 3rem;
+        line-height: .1;
+        color: black;
+    }
+
+    .plans-and-pricing p {
+        font-size: 1.7rem;
+        line-height: 1.4;
+        color:rgb(57, 58, 58);
     }
 }
