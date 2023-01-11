@@ -20,7 +20,10 @@
     /* Tablet Media Query */
 
     --fs-heading-first-letter-tablet: 15.5rem;
-    --fs-heading-following-letters-tablet: 6rem;
+    --fs-heading-following-letters-tablet: 5.5rem;
+
+    --fs-classes-page-sections-tablet: 4.5rem;
+    --fs-classes-section-numbers-tablet: 7.5rem;
 }
 
 /* GENERAL RESET STYLES*/
@@ -884,7 +887,9 @@ section on Classes page*/
     margin-bottom: var(--margin-bottom-headings);
     margin-top: var(--margin-top-headings);
     grid-row: 3 / 4;
-    z-index: 1;   
+    z-index: 1;
+    display: flex;  
+    flex-direction: column; 
 }
 
 .phone h2:nth-child(1)::before {
@@ -1053,8 +1058,8 @@ grid-row: 2 / 3;
     nav ul li a {
         font-size: 1.5rem;
         font-weight: bold;
-        color: rgb(3, 3, 3);
-        /* color: rgb(255, 255, 255); */
+        /* color: rgb(3, 3, 3); */
+        color: rgb(255, 255, 255);
         position: relative; 
     }
 
@@ -1366,6 +1371,127 @@ grid-row: 2 / 3;
     .plans-and-pricing p {
         font-size: 1.7rem;
         line-height: 1.4;
-        color:rgb(57, 58, 58);
+        color:rgb(105, 112, 112);
+    }
+
+    .online-training-section::before {
+        font-size: var(--fs-classes-section-numbers-tablet);
+    }
+
+    .online-training-section h1 {
+        font-size: var(--fs-classes-page-sections-tablet);
+    }
+
+    .one-to-one-section::before {
+        font-size: var(--fs-classes-section-numbers-tablet);
+    }
+
+    .one-to-one-section h1 {
+        font-size: var(--fs-classes-page-sections-tablet);
+    }
+
+    .corporate-package-section::before {
+        font-size: var(--fs-classes-section-numbers-tablet);
+    }
+
+    .corporate-package-section h1 {
+        font-size: var(--fs-classes-page-sections-tablet);
+    }
+
+    .custom-plan-section h1 {
+        font-size: var(--fs-heading-following-letters-tablet);
+    }
+
+    .custom-plan-section h2 {
+        font-size: 1.7rem;
+    }
+
+    .training-options-classes h1 {
+        text-transform: none;
+        font-size: 3.7rem;
+        font-weight: 100;
+        line-height: 1;
+    }
+
+    .training-options-classes img {
+        width: 255px;
+        height: 255px;
+    }
+
+    .short-dividing-image-online {
+        height: 24rem;
+    }
+
+    .short-dividing-image-group {
+        height: 24rem;
+    }
+
+    .short-dividing-image-corporate {
+        height: 24rem;
+    }
+
+    /* STYLES FOR CONTACT PAGE */
+
+    .contact-layout-grid {
+        grid-template-rows: 33rem auto auto 12rem;
+    }
+
+    .contact-main h1 {
+        font-size: var(--fs-heading-following-letters-tablet);
+    }
+
+    .contact-main p {
+        font-size: 2.3rem;
+        line-height: 1.2;
+    }
+
+    .phone {
+        margin: 6rem 0;
+    }
+
+    .contact-social-media {
+        padding: 2rem;
+    }
+
+    .contact-social-media i {
+        font-size: 3.2rem;
+    }
+
+    .phone h2:nth-child(1)::before {
+        padding: 2rem;
+        font-size: 2rem;
+        
+    }
+
+    .phone h2:nth-child(2)::before {
+        padding: 2rem;
+        font-size: 2rem;
+    }
+
+    .phone h2 {
+        font-size: 1.7rem;
+        
+    }
+
+    .phone h2:first-child {
+        margin-bottom: 5rem;
+    }
+
+    /* STYLES FOR GALLERY PAGE */
+
+    .gallery-page-grid {
+        grid-template-rows: 33rem auto 12rem;
+    }
+
+    .gallery-page-main h1 {
+        font-size: var(--fs-heading-following-letters-tablet);
+    }
+
+    .gallery-page-main p,
+    .gallery-page-main h2 {
+        font-size: 2rem;
+        color:rgb(79, 88, 88);
+        line-height: 1.2;
+        margin: 3rem 0;
     }
 }
