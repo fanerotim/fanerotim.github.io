@@ -1494,4 +1494,28 @@ grid-row: 2 / 3;
         line-height: 1.2;
         margin: 3rem 0;
     }
+
+    /* BACK TO TOP BUTTON */
+
+    .back-to-top {
+        padding: .9rem 1.8rem;
+    }
+
+    .back-to-top a {
+        font-size: 1.3rem;
+    }
+
+    /* FOOTER */
+
+    .footer-elements-layout ul li a {
+        font-size: 1.3rem;
+    }
+
+    .copyright {
+        font-size: 1rem;
+    }
+
+    footer i {
+        font-size: 3rem;
+    }
 }
