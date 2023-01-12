@@ -13,7 +13,7 @@
     --margin-top-headings-large: 3rem;
     --margin-bottom-headings-large: 3rem;
 
-    --clr-thin-headings: rgba(34, 107, 51, 0.6);
+    --clr-thin-headings: rgba(34, 107, 51);
     --clr-headings-watermark: rgba(34, 148, 77, 0.2);
     --fw-thin-headings: 100;
 
@@ -23,7 +23,7 @@
     --fs-heading-following-letters-tablet: 5.5rem;
 
     --fs-classes-page-sections-tablet: 4.5rem;
-    --fs-classes-section-numbers-tablet: 7.5rem;
+    --fs-classes-section-numbers-tablet: 9.5rem;
 }
 
 /* GENERAL RESET STYLES*/
@@ -187,6 +187,7 @@ nav ul li a {
     font-weight: var(--fw-thin-headings);
     margin-top: 1.5rem;
     color: var(--clr-thin-headings);
+    color: rgb(14, 92, 62);  
 }
 
 .about-me-heading:first-letter {
@@ -710,7 +711,8 @@ section on Classes page*/
 
 .plans-and-pricing h1 span {
     font-weight: var(--fw-thin-headings);
-    color: var(--clr-thin-headings);   
+    color: var(--clr-thin-headings); 
+    color: rgb(14, 92, 62);  
 }
 
 .online-training-section h1,
@@ -1360,6 +1362,7 @@ grid-row: 2 / 3;
 
     .plans-heading h1 {
         font-size: var(--fs-heading-following-letters-tablet);
+        margin-top: 4rem;
     }
 
     .plans-heading p::first-letter {
@@ -1369,25 +1372,39 @@ grid-row: 2 / 3;
     }
 
     .plans-and-pricing p {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         line-height: 1.4;
-        color:rgb(105, 112, 112);
+        color:rgb(105, 112, 112); 
+        margin: 4rem 0;
+        color: black; 
+    }
+
+    .classes-description-paragraphs p {
+        columns: 2;
+        font-size: 1.5rem;
+        color: rgb(102, 102, 102);
+        font-weight: 300;
+        gap: 2.5rem;
     }
 
     .online-training-section::before {
         font-size: var(--fs-classes-section-numbers-tablet);
+
     }
 
     .online-training-section h1 {
         font-size: var(--fs-classes-page-sections-tablet);
+        width: 60%;
     }
 
     .one-to-one-section::before {
         font-size: var(--fs-classes-section-numbers-tablet);
+        
     }
 
     .one-to-one-section h1 {
         font-size: var(--fs-classes-page-sections-tablet);
+       
     }
 
     .corporate-package-section::before {
@@ -1399,7 +1416,7 @@ grid-row: 2 / 3;
     }
 
     .custom-plan-section h1 {
-        font-size: var(--fs-heading-following-letters-tablet);
+        font-size: var(--fs-classes-page-sections-tablet);
     }
 
     .custom-plan-section h2 {
@@ -1485,6 +1502,7 @@ grid-row: 2 / 3;
 
     .gallery-page-main h1 {
         font-size: var(--fs-heading-following-letters-tablet);
+        margin-top: 4rem;
     }
 
     .gallery-page-main p,
