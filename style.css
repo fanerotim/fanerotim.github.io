@@ -5,6 +5,7 @@
     
     --fw-section-headings: 200;
     --fs-section-headings: 3rem;
+    --fs-first-letter-headings-mobile: 8.5rem;
     --lh-section-headings: .95;
 
     --margin-bottom-headings: 1.5rem;
@@ -191,8 +192,8 @@ nav ul li a {
 }
 
 .about-me-heading:first-letter {
-    font-size: 5.5rem;
-    letter-spacing: -.8rem;
+    font-size: var(--fs-first-letter-headings-mobile);
+    letter-spacing: -1.7rem;
     color: var(--clr-headings-watermark);
     font-weight: 800;
 }
@@ -258,30 +259,32 @@ nav ul li a {
 }
 
 .heading-styles h1::first-letter{
-    font-size: 5.5rem;
+    font-size: var(--fs-first-letter-headings-mobile);
     font-weight: bold;
-    letter-spacing: -.9rem;
+    letter-spacing: -1.7rem;
     color: var(--clr-headings-watermark);
     line-height: .8;
 }
 
+.heading-styles-testimonials {
+    margin-bottom: 5rem;
+}
+
 .heading-styles-testimonials h1::first-letter {
-    font-size: 5.5rem;
+    font-size: var(--fs-first-letter-headings-mobile);
     font-weight: bold;
-    letter-spacing: -1.5rem;
+    letter-spacing: -3rem;
     color: var(--clr-headings-watermark);
     line-height: .8;
 }
 
 .heading-styles-personal h1::first-letter {
-    font-size: 5.5rem;
+    font-size: var(--fs-first-letter-headings-mobile);
     font-weight: bold;
-    letter-spacing: -1rem;
+    letter-spacing: -4rem;
     color: var(--clr-headings-watermark);
     line-height: .8;
 }
-
-
 
 .thin-font-heading-home-page li {
     font-size: 1.2rem;
@@ -291,8 +294,7 @@ nav ul li a {
 
 .thin-font-heading-home-page i {
     font-size: 1.3rem;
-    margin-left: .2rem;
-    
+    margin-left: .2rem;   
 }
 
 .specialist-areas {
@@ -316,8 +318,7 @@ nav ul li a {
     font-size: 1.3rem;
     text-align: left;
     margin-bottom: .1rem;
-    margin-top: 0;
-    
+    margin-top: 0;   
 }
 
 .level3 {
@@ -713,7 +714,7 @@ section on Classes page*/
     font-weight: var(--fw-section-headings);
     line-height: var(--lh-section-headings);
     margin: var(--margin-top-headings) 0 var(--margin-bottom-headings) 0;  
-   
+    text-transform: uppercase;
 }
 
 .plans-and-pricing h1 span {
@@ -819,6 +820,7 @@ section on Classes page*/
 
 .section-with-circle-images h1 {
     font-weight: 100;
+    text-transform: none;
 }
 
 .section-with-circle-images p {
