@@ -370,9 +370,9 @@ nav ul li a {
     margin-top: var(--margin-top-headings-large);
 }
 
-.testimonials-card {
+/* .testimonials-card {
     width: 90%;
-    /* background-color: rgb(156, 190, 180); */
+    background-color: rgb(156, 190, 180);
     box-shadow: .5rem .5rem .9rem rgb(156, 190, 180);
     display: grid;
     grid-template-columns: 100px 50px 1fr;
@@ -381,48 +381,51 @@ nav ul li a {
     color: black;
     margin: 2rem auto;
     border-radius: .5rem;
-}
+} */
 
-.testimonials-card img {
-    width: 80px;
-    height: 80px;
+/* .testimonials-card img {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
-}
+    float: left;
+    shape-outside: circle(50%);
+    margin-right: 2rem;
+} */
 
-.testimonials-card p {
+/* .testimonials-card p {
     font-size: .8rem;
     grid-column: 3 / 4;
     padding: 15px 20px 0 20px;
     
-}
+} */
 
-.testimonials-card:last-child {
+/* .testimonials-card:last-child {
     margin-bottom: 0;
-}
+} */
 
-.testimonials-card p::before {
+/* .testimonials-card p::before {
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900; 
     content: '\f10d';
-    font-size: 4rem;
+    font-size: 5rem;
     color: var(--clr-headings-watermark);
     position: absolute;
-    top: -17%; 
-    right: -35%;
+    top: -3.5rem; 
+    left: 0;
     grid-column: 2 / 3; 
     padding-right: 1rem;
     overflow: hidden;
-    transform: rotate(-10deg);
-}
+    transform: rotate(-20deg);
+} */
 
-.testimonials-card h3 {
+/* .testimonials-card h3 {
     grid-column: 3 / 4; 
     align-self: end;
     justify-self: start;
     font-size: .6rem;
     padding-left: 20px;
-}
+} */
 
 .testimonials-card-1 {
     width: 90%;
@@ -433,8 +436,10 @@ nav ul li a {
     grid-template-rows: repeat(2, minmax(70px, auto)); */
     position: relative;
     color: black;
-    margin: 2rem auto;
+    margin: 0 auto;
     border-radius: .5rem;
+    padding: 1rem 0;
+
 }
 
 .testimonials-card-1 img {
@@ -467,13 +472,11 @@ nav ul li a {
     transform: rotate(-20deg);
 }
 
-.testimonials-card-1 h3 {
+.testimonials-card-1 h3,
+.testimonials-card-img-right h3 {
     padding-left: 1rem;
     font-size: 1.3rem;
 }
-
-
-
 
 /* Testimonials with images on the right */
 
@@ -481,49 +484,53 @@ nav ul li a {
     width: 90%;
     margin: 0rem auto;
     /* background: rgb(200, 223, 214); */
-    display: grid;
+    /* display: grid;
     grid-template-columns: 50px 1fr 100px;
-    grid-template-rows: repeat(minmax(6rem, auto));
+    grid-template-rows: repeat(minmax(6rem, auto)); */
     position: relative;
+    box-shadow: .5rem .5rem .9rem rgb(156, 190, 180);
+    border-radius: .5rem;
+    margin: 4rem auto;
+    padding: 1rem 0;
 }
 
 .testimonials-card-img-right img {
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
+    float: right;
     border-radius: 50%;
     object-fit: cover;
-    grid-column: 3 / 4;
-    justify-self: end;
+    shape-outside: circle(50%);
+    margin-left: 2rem;
+    /* grid-column: 3 / 4; */
+    /* justify-self: end; */
 }
 
 .testimonials-card-img-right p {
     font-size: .8rem;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    padding: 15px 20px 0 20px;
+    padding: 1rem 1rem;
 }
 
 .testimonials-card-img-right p::before {
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900; 
     content: '\f10d';
-    font-size: 4rem;
+    font-size: 5rem;
     color: var(--clr-headings-watermark);
     position: absolute;
-    top: -17%;
-    left: 10%;
-    grid-column: 1 / 2;
+    top: -3.5rem;
+    right: 0;
     padding-right: 1rem;
     overflow-x: hidden;
-    transform: rotate(10deg);
+    transform: rotate(20deg);
 }
-
 
 .testimonials-card-img-right h3 {
     grid-column: 2 / 3; 
     align-self: end;
     justify-self: start;
-    font-size: .6rem;
     padding-left: 20px;
 }
 
@@ -826,12 +833,6 @@ section on Classes page*/
     margin: var(--margin-top-headings-large) 0 var(--margin-bottom-headings-large) 0;
     font-family: 'Raleway', sans-serif;
 }
-
-.training-options-classes h4::first-letter {
-    font-size: 1.3rem;
-}
-
-
 
 /* FOOTER ON CLASSES PAGE */
 
@@ -1304,9 +1305,16 @@ grid-row: 2 / 3;
         height: 100px;
     }
 
+    .testimonials-card-img-right img {
+        width: 150x;
+        height: 150px;
+    }
+
     .testimonials-card-1 p, 
-    .testimonials-card p {
+    .testimonials-card p,
+    .testimonials-card-img-right p {
         font-size: 1rem;
+        padding: 1rem;
     }
 
     .testimonials-card-1 h3, 
@@ -1352,6 +1360,13 @@ grid-row: 2 / 3;
         border-radius: 2rem;
     }
 
+    .button:hover, 
+    .button:focus {
+        color: black;
+        background: white;
+        border: 4px solid var(--clr-headings-watermark);
+    }
+
     /* END OF HOME PAGE STYLES */
 
     /* CLASSES PAGE STYLES FOR TABLET */
@@ -1362,7 +1377,10 @@ grid-row: 2 / 3;
 
     .plans-heading h1 {
         font-size: var(--fs-heading-following-letters-tablet);
-        margin-top: 4rem;
+    }
+
+    .plans-heading p {
+        margin: 3rem 0;
     }
 
     .plans-heading p::first-letter {
@@ -1375,16 +1393,16 @@ grid-row: 2 / 3;
         font-size: 1.5rem;
         line-height: 1.4;
         color:rgb(105, 112, 112); 
-        margin: 4rem 0;
         color: black; 
     }
-
+ 
     .classes-description-paragraphs p {
         columns: 2;
         font-size: 1.5rem;
         color: rgb(102, 102, 102);
         font-weight: 300;
         gap: 2.5rem;
+        color: black; 
     }
 
     .online-training-section::before {
@@ -1433,6 +1451,12 @@ grid-row: 2 / 3;
     .training-options-classes img {
         width: 255px;
         height: 255px;
+    }
+
+    .training-options-classes > h4 {
+        color: black;
+        font-size: 1.5rem;
+        font-weight: 300;
     }
 
     .short-dividing-image-online {
@@ -1521,6 +1545,17 @@ grid-row: 2 / 3;
 
     .back-to-top a {
         font-size: 1.3rem;
+    }
+
+    .back-to-top a:hover,
+    .back-to-top a:focus {
+        color: black;
+    }
+
+    .back-to-top:hover,
+    .back-to-top:focus {
+        background: white;
+        border: 3px solid var(--clr-headings-watermark);
     }
 
     /* FOOTER */
