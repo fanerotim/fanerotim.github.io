@@ -59,7 +59,7 @@ html {
 }
 
 .home-page-background-hero-image {
-    background-image: url(images/home-page-cropped.jpg);
+    background-image: url(images/home-page-cropped-edited.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     grid-row: 1 / 2; 
@@ -336,7 +336,7 @@ nav ul li a {
 }
 
 .level2 {
-    background: url(images/kettlebells.jpg);
+    background: url(images/kettlebells-edited.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: rgba(57, 65, 57, .7);
@@ -579,7 +579,7 @@ nav ul li a {
 .third-image {
     width: 100vw;
     height: 60vh;
-    background-image: url(images/classes-bg-image.jpg);
+    background-image: url(images/classes-bg-image-edited.jpg);
     background-size: cover;
     /* background-position: top; */
 
@@ -701,7 +701,7 @@ LOGO AND HERO IMAGE ON "CLASSES" PAGE */
 }
 
 .classes-hero-background {
-    background-image: url(images/loggo-edited.jpg); 
+    background-image: url(images/loggo-edited-edited.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
     grid-row: 1 / 2; 
@@ -968,7 +968,7 @@ section on Classes page*/
 
 .gallery-bg-image {
     grid-row: 1 / 2;
-    background: url(images/about-cropped.jpg);
+    background: url(images/about-cropped-edited.jpg);
     background-size: cover;
     background-repeat: no-repeat;  
 }
