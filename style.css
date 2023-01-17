@@ -5,7 +5,7 @@
     
     --fw-section-headings: 200;
     --fs-section-headings: 3rem;
-    --fs-first-letter-headings-mobile: 8.5rem;
+    --fs-first-letter-headings-mobile: 9.5rem;
     --lh-section-headings: .95;
 
     --margin-bottom-headings: 1.5rem;
@@ -196,6 +196,8 @@ nav ul li a {
     letter-spacing: -1.7rem;
     color: var(--clr-headings-watermark);
     font-weight: 800;
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Skranji', cursive;
 }
 
 .about-me h1:nth-child(2) {
@@ -264,6 +266,8 @@ nav ul li a {
     letter-spacing: -1.7rem;
     color: var(--clr-headings-watermark);
     line-height: .8;
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Skranji', cursive;
 }
 
 .heading-styles-testimonials {
@@ -276,6 +280,7 @@ nav ul li a {
     letter-spacing: -3rem;
     color: var(--clr-headings-watermark);
     line-height: .8;
+    font-family: 'Skranji', cursive;
 }
 
 .heading-styles-personal h1::first-letter {
@@ -284,6 +289,7 @@ nav ul li a {
     letter-spacing: -4rem;
     color: var(--clr-headings-watermark);
     line-height: .8;
+    font-family: 'Skranji', cursive;
 }
 
 .thin-font-heading-home-page li {
