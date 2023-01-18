@@ -619,7 +619,12 @@ nav ul li a {
     background-color: rgba(121, 209, 183, 0.815);
     color: rgb(54, 54, 54);
     margin: 0 0 var(--margin-bottom-headings-large) 0;
-} 
+}
+
+.button:active {
+    border: 1px solid var(--clr-headings-watermark);
+    background: white;
+}
 
 .personal-and-online-training-list img {
     border-radius: 50%;
@@ -1029,6 +1034,15 @@ grid-row: 2 / 3;
     font-size: .75rem;
 }
 
+.back-to-top:active {
+    border: 1px solid rgba(34, 107, 51, 0.6);
+    background: white;
+}
+
+.back-to-top a:focus {
+    color: black;
+}
+
 /* STYLES FOR FOOTER ON GALLERY PAGE */
 
 .gallery-page-footer {
@@ -1152,6 +1166,7 @@ grid-row: 2 / 3;
     .quote span {
         color: white;
         font-weight: bold;
+        font-family: Skranji;
     }
 
     
@@ -1226,6 +1241,10 @@ grid-row: 2 / 3;
 
     /* SPECIALIST AREAS */
 
+    .section-4-5 {
+        margin: 2rem auto;
+    }
+
     .heading-styles h1::first-letter {
         font-size: var(--fs-heading-first-letter-tablet);
         letter-spacing: -1.7rem;
@@ -1237,7 +1256,7 @@ grid-row: 2 / 3;
 
     .specialist-areas {
        box-shadow: none;
-       margin-top: 2rem;
+       margin: 3rem 0;
        /* border-bottom: .1rem solid rgb(56, 70, 62); */
     }
 
@@ -1245,8 +1264,7 @@ grid-row: 2 / 3;
         display: grid;
         grid-template-columns: repeat(2, minmax(230px, 30rem));
         grid-template-rows: repeat(3, minmax(4rem, 5rem));
-        gap: 1rem;
-        
+        gap: 1rem;    
     }
 
     .specialist-areas ul li {
@@ -1267,8 +1285,7 @@ grid-row: 2 / 3;
         margin-left: auto;
         margin-right: .5rem;
         width: 60%;
-        font-variant: small-caps;
-        
+        font-variant: small-caps;    
     }
 
     .specialist-areas ul li i {
@@ -1285,7 +1302,8 @@ grid-row: 2 / 3;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: .7rem;
-        height: 25rem;  
+        height: 25rem; 
+        margin-top: 3rem; 
     }
 
     .container-cards h1 {
@@ -1449,6 +1467,8 @@ grid-row: 2 / 3;
     .custom-plan-section h1 {
         font-size: var(--fs-classes-page-sections-tablet);
         text-transform: none;
+        line-height: 1.1;
+        
     }
 
     .custom-plan-section h2 {
