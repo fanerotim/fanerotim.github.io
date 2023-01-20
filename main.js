@@ -68,4 +68,5 @@ const nav = document.querySelector('.navbar')
 				slideInterval = setInterval(nextSlide, intervalTime);
 		}
 
-		
+
+// One to One slider
