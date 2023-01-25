@@ -1154,6 +1154,20 @@ button#nextSlide {
     transform: rotate(0deg);
 }
 
+button#previous:hover,
+button#previous:focus {
+    border: .1rem solid var(--clr-headings-watermark);
+    color: var(--clr-headings-watermark);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+button#nextSlide:hover,
+button#nextSlide:focus {
+    border: .1rem solid var(--clr-headings-watermark);
+    color: var(--clr-headings-watermark);
+    background: rgba(255, 255, 255, 0.3);
+}
+
 /* End of One-to-One slider styles */
 
 /* Slider - Group Sessions */
@@ -1208,6 +1222,20 @@ button#nextSlideTwo {
     transform: rotate(0deg);
 }
 
+button#previousTwo:hover,
+button#previousTwo:focus {
+    border: .1rem solid var(--clr-headings-watermark);
+    color: var(--clr-headings-watermark);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+button#nextSlideTwo:hover,
+button#nextSlideTwo:focus {
+    border: .1rem solid var(--clr-headings-watermark);
+    color: var(--clr-headings-watermark);
+    background: rgba(255, 255, 255, 0.3);
+}
+
 /* End of Group slider styles */
 
 
@@ -1235,6 +1263,20 @@ button#next {
     top: 40%;
     right: 0;
     transform: rotate(0deg);
+}
+
+button#prev:hover,
+button#prev:focus {
+    border: .1rem solid var(--clr-headings-watermark);
+    color: var(--clr-headings-watermark);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+button#next:hover,
+button#next:focus {
+    border: .1rem solid var(--clr-headings-watermark);
+    color: var(--clr-headings-watermark);
+    background: rgba(255, 255, 255, 0.3);
 }
 
 /* STYLES FOR FOOTER ON GALLERY PAGE */
