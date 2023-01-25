@@ -549,8 +549,6 @@ nav ul li a {
 
 .personal-and-online-training {
     grid-row: 6 / 7;
-    
-    /*margin-top: 1rem;*/    
 }
 
 /* .chevron-p-and-o-training::before {
@@ -600,7 +598,7 @@ nav ul li a {
 }
 
 .personal-and-online-training p {
-    margin-top: 1.5rem;
+    margin-top: 3rem;
 }
 
 .personal-and-online-training p span {
@@ -986,7 +984,7 @@ grid-row: 2 / 3;
 
 .gallery-page-main article h1,
 .gallery-page-main article p,
-.gallery-page-main h2 {
+.gallery-page-main h2{
     width: 80vw;
     margin: 2rem auto;
 }
@@ -1806,6 +1804,10 @@ button#next:focus {
         color:rgb(79, 88, 88);
         line-height: 1.2;
         margin: 3rem 0;
+    }
+
+    .gallery-page-main h2 {
+        margin: 3rem auto;
     }
 
     .slider {
