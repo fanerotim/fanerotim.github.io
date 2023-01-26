@@ -9,7 +9,7 @@
     --lh-section-headings: 1.05;
 
     --margin-bottom-headings: 1.5rem;
-    --margin-top-headings: 3rem;
+    --margin-top-headings: 2rem;
 
     --margin-top-headings-large: 3rem;
     --margin-bottom-headings-large: 3rem;
@@ -174,7 +174,7 @@ nav ul li a {
 }
 
 .about-me p {
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .about-me h1 {
@@ -836,7 +836,7 @@ section on Classes page*/
 
 .section-with-circle-images p {
     font-size: 1.8rem;
-    font-weight: 300;
+    font-weight: 200;
     line-height: 1;
     /* padding-left: 1rem;
     padding-right: 1rem; */
@@ -1714,10 +1714,10 @@ button#next:focus {
         font-size: 1.7rem;
     }
 
-    .training-options-classes h1 {
+    .training-options-classes p {
         text-transform: none;
         font-size: 3.7rem;
-        font-weight: 100;
+        font-weight: 200;
         line-height: 1;
     }
 
