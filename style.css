@@ -6,10 +6,10 @@
     --fw-section-headings: 200;
     --fs-section-headings: 3rem;
     --fs-first-letter-headings-mobile: 9.5rem;
-    --lh-section-headings: .95;
+    --lh-section-headings: 1.05;
 
     --margin-bottom-headings: 1.5rem;
-    --margin-top-headings: 2rem;
+    --margin-top-headings: 3rem;
 
     --margin-top-headings-large: 3rem;
     --margin-bottom-headings-large: 3rem;
@@ -174,7 +174,7 @@ nav ul li a {
 }
 
 .about-me p {
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .about-me h1 {
@@ -836,7 +836,7 @@ section on Classes page*/
 
 .section-with-circle-images p {
     font-size: 1.8rem;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 1;
     /* padding-left: 1rem;
     padding-right: 1rem; */
@@ -893,6 +893,9 @@ section on Classes page*/
     font-size: 1.4rem;
     font-weight: 200;
     font-family: 'Raleway', sans-serif;
+    line-height: 1.35;
+    margin-top: 2.5rem;
+    margin-bottom: 1.3rem;
 }
 
 .phone h2 {
@@ -901,6 +904,7 @@ section on Classes page*/
     margin-left: 10%;
     margin-bottom: 1.5rem;
     display: inline-block;
+    padding: .2rem 0;
 }
 
 .phone {
@@ -1369,6 +1373,7 @@ button#next:focus {
         grid-row: 1 / 2; 
         background: linear-gradient(90deg, rgba(166,244,205,1) 14%, rgba(120,237,202,1) 42%, rgba(179,237,222,1) 70%);
         background: linear-gradient(90deg, rgba(53,198,87,1) 0%, rgba(45,184,119,.5) 0%, rgba(21,177,97,.5) 70%);
+        background: var(--clr-headings-watermark);
         border-bottom-left-radius: 15rem;
        
     }
@@ -1751,7 +1756,6 @@ button#next:focus {
 
     .contact-main p {
         font-size: 2.3rem;
-        line-height: 1.2;
     }
 
     .phone {
@@ -1827,11 +1831,12 @@ button#next:focus {
     /* BACK TO TOP BUTTON */
 
     .back-to-top {
-        padding: .9rem 1.8rem;
+        padding: .5rem 1rem;
     }
 
     .back-to-top a {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        
     }
 
     .back-to-top a:hover,
