@@ -999,7 +999,11 @@ grid-row: 2 / 3;
     line-height: var(--lh-section-headings);
     margin: var(--margin-top-headings) 0 var(--margin-bottom-headings) 0;
     text-transform: uppercase;
-    border-left: .5rem solid var(--clr-headings-watermark);
+    
+    border-left: 1.5rem dashed var(--clr-headings-watermark);
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
     padding-left: .4rem;
 }
 
