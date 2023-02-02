@@ -2,7 +2,7 @@
 
 :root {
     --testimonial-quotes-clr: rgba(95, 95, 95, 0.4);
-    
+
     --fw-section-headings: 200;
     --fs-section-headings: 3rem;
     --fs-first-letter-headings-mobile: 9.5rem;
@@ -49,7 +49,7 @@ html {
 
 .container {
     width: 80vw;
-    margin: 0 auto;   
+    margin: 0 auto;
 }
 
 /*HOME PAGE LAYOUT - HERO SECTION AND LAYOUT*/
@@ -63,7 +63,7 @@ html {
     background-image: url(images/home-page-cropped-edited.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    grid-row: 1 / 2; 
+    grid-row: 1 / 2;
 }
 
 .quote {
@@ -80,7 +80,7 @@ nav {
     gap: 1rem;
     padding: 0.2rem 1.2rem 0.2rem 1.2rem;
     width: 100%;
-    height: 5rem; 
+    height: 5rem;
     overflow: hidden;
     /* background-color: rgba(65, 61, 61, .2); */
     margin-bottom: 2rem;
@@ -149,20 +149,20 @@ nav ul li a {
     color: black;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 3rem; 
+    font-size: 3rem;
     font-weight: 200;
     font-family: 'Raleway', sans-serif;
 }
 
-/* STYLES FOR THE LOGO OF THE WEBSITE */ 
+/* STYLES FOR THE LOGO OF THE WEBSITE */
 
 .logo img {
     border-radius: 60%;
     width: 2.5rem;
-    
+
     /* "display: flex;" in this case allows me to center the logo in the navigation too.
     if I don't include it, the image is not centered, it is not affected by the styles of the <nav> tag*/
-    display: flex;  
+    display: flex;
 }
 
 /*ABOUT ME STYLES*/
@@ -189,7 +189,7 @@ nav ul li a {
     font-weight: var(--fw-thin-headings);
     margin-top: 1.5rem;
     color: var(--clr-thin-headings);
-    color: rgb(14, 92, 62);  
+    color: rgb(14, 92, 62);
 }
 
 .about-me-heading:first-letter {
@@ -233,7 +233,7 @@ nav ul li a {
 }
 
 .about-me ul {
-    list-style-type: none;   
+    list-style-type: none;
 }
 
 
@@ -242,7 +242,7 @@ nav ul li a {
 .second-image {
     width: 100%;
     height: 350px;
-    background: url(images/jpeg1.jpg);
+    background: url(images/website-pictures/kickboxing-grade.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     grid-row: 3 / 4;
@@ -261,7 +261,7 @@ nav ul li a {
     margin-top: var(--margin-top-headings);
 }
 
-.heading-styles h1::first-letter{
+.heading-styles h1::first-letter {
     font-size: var(--fs-first-letter-headings-mobile);
     font-weight: bold;
     letter-spacing: -1.7rem;
@@ -296,19 +296,19 @@ nav ul li a {
 .thin-font-heading-home-page li {
     font-size: 1.2rem;
     font-weight: 200;
-    
+
 }
 
 .thin-font-heading-home-page i {
     font-size: 1.3rem;
-    margin-left: .2rem;   
+    margin-left: .2rem;
 }
 
 .specialist-areas {
     padding: .5rem 0;
     /* background-color: rgb(217, 255, 217, .4); */
     box-shadow: .8rem 0rem 1.2rem rgba(171, 218, 183, 0.4);
-    box-shadow: .8rem 0rem 1.2rem rgba(28, 148, 112, .3);   
+    box-shadow: .8rem 0rem 1.2rem rgba(28, 148, 112, .3);
 }
 
 .specialist-areas ul p {
@@ -325,7 +325,7 @@ nav ul li a {
     font-size: 1.3rem;
     text-align: left;
     margin-bottom: .1rem;
-    margin-top: 0;   
+    margin-top: 0;
 }
 
 .level3 {
@@ -333,7 +333,7 @@ nav ul li a {
     background-size: cover;
     background-repeat: no-repeat;
     background-color: rgba(57, 65, 57, .7);
-    background-blend-mode: multiply; 
+    background-blend-mode: multiply;
 }
 
 .level2 {
@@ -365,7 +365,7 @@ nav ul li a {
 .testimonials {
     grid-row: 5 / 6;
     border-bottom: rgb(156, 190, 180);
-    
+
 }
 
 .testimonials h1 {
@@ -373,7 +373,7 @@ nav ul li a {
     font-weight: var(--fw-thin-headings);
     text-transform: uppercase;
     font-size: var(--fs-section-headings);
-    line-height: var(--lh-section-headings);  
+    line-height: var(--lh-section-headings);
     margin-bottom: var(--margin-bottom-headings-large);
     margin-top: var(--margin-top-headings-large);
 }
@@ -462,20 +462,20 @@ nav ul li a {
 }
 
 .testimonials-card-1 p {
-   padding: 1rem;
-   font-size: .8rem;
+    padding: 1rem;
+    font-size: .8rem;
 }
 
 .testimonials-card-1 p::before {
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: 900; 
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     content: '\f10d';
     font-size: 5rem;
     color: var(--clr-quotes-watermark);
     position: absolute;
     top: -3.5rem;
-    left: 0; 
-    grid-column: 2 / 3; 
+    left: 0;
+    grid-column: 2 / 3;
     padding-right: 1rem;
     overflow: hidden;
     transform: rotate(-20deg);
@@ -523,8 +523,8 @@ nav ul li a {
 }
 
 .testimonials-card-img-right p::before {
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: 900; 
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     content: '\f10d';
     font-size: 5rem;
     color: var(--clr-quotes-watermark);
@@ -537,7 +537,7 @@ nav ul li a {
 }
 
 .testimonials-card-img-right h3 {
-    grid-column: 2 / 3; 
+    grid-column: 2 / 3;
     align-self: end;
     justify-self: start;
     padding-left: 20px;
@@ -583,7 +583,7 @@ nav ul li a {
     background-size: cover;
     /* background-position: top; */
 
-   
+
     /* background-color: rgba(57, 65, 57, .4);
     background-blend-mode: multiply; */
 }
@@ -647,7 +647,7 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    
+
 }
 
 footer p {
@@ -684,7 +684,7 @@ footer ul li a:hover {
 .footer-elements-layout a {
     color: white;
     text-decoration: none;
-    font-size: 1rem; 
+    font-size: 1rem;
 }
 
 .copyright {
@@ -692,7 +692,7 @@ footer ul li a:hover {
     background: black;
     color: white;
     font-size: 0.7rem;
-    
+
 }
 
 
@@ -706,25 +706,25 @@ LOGO AND HERO IMAGE ON "CLASSES" PAGE */
 }
 
 .classes-hero-background {
-    background-image: url(images/loggo-edited-edited.jpg); 
+    background-image: url(images/loggo-edited-edited.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    grid-row: 1 / 2; 
-     
+    grid-row: 1 / 2;
+
 }
 
 /* Styles for "Plans and Pricing" 
 section on Classes page*/
 
 .plans-and-pricing {
-    grid-row: 2 / 3; 
+    grid-row: 2 / 3;
 }
 
 .plans-and-pricing h1 {
     font-size: var(--fs-section-headings);
     font-weight: var(--fw-section-headings);
     line-height: var(--lh-section-headings);
-    margin: var(--margin-top-headings) 0 var(--margin-bottom-headings) 0;  
+    margin: var(--margin-top-headings) 0 var(--margin-bottom-headings) 0;
     text-transform: uppercase;
 }
 
@@ -734,8 +734,8 @@ section on Classes page*/
 
 .plans-and-pricing h1 span {
     font-weight: var(--fw-thin-headings);
-    color: var(--clr-thin-headings); 
-    color: rgb(14, 92, 62);  
+    color: var(--clr-thin-headings);
+    color: rgb(14, 92, 62);
 }
 
 .plans-and-pricing h1 span:nth-child(2) {
@@ -760,8 +760,8 @@ section on Classes page*/
 }
 
 .online-training-section::before {
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: 900; 
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     content: '\31.';
     font-size: 5.5rem;
     display: block;
@@ -770,17 +770,17 @@ section on Classes page*/
 }
 
 .short-dividing-image-online {
-     background: url(images/online-training.jpg);
-     background-repeat: no-repeat;
-     background-size: cover;
-     height: 12rem;
-     background-blend-mode: lighten;
-     background-color: rgb(62, 80, 70);
- }
+    background: url(images/online-training.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 12rem;
+    background-blend-mode: lighten;
+    background-color: rgb(62, 80, 70);
+}
 
 .one-to-one-section::before {
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: 900; 
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     content: '\32.';
     font-size: 5.5rem;
     display: block;
@@ -798,8 +798,8 @@ section on Classes page*/
 }
 
 .corporate-package-section::before {
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: 900; 
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     content: '\33.';
     font-size: 5.5rem;
     display: block;
@@ -920,13 +920,13 @@ section on Classes page*/
     margin-top: var(--margin-top-headings);
     grid-row: 3 / 4;
     z-index: 1;
-    display: flex;  
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
 }
 
 .phone h2:nth-child(1)::before {
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: 900; 
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     content: "\f095";
     margin-right: .5rem;
     background: rgb(116, 173, 138, .2);
@@ -935,8 +935,8 @@ section on Classes page*/
 }
 
 .phone h2:nth-child(2)::before {
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: 900; 
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     content: "\f0e0";
     margin-right: .5rem;
     background: rgb(116, 173, 138, .2);
@@ -974,7 +974,7 @@ section on Classes page*/
 
 .contact-layout-grid footer {
     grid-row: 4 / 5;
-    
+
 }
 
 /* STYLES FOR GALLERY PAGE */
@@ -988,16 +988,16 @@ section on Classes page*/
     grid-row: 1 / 2;
     background: url(images/about-cropped-edited.jpg);
     background-size: cover;
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat;
 }
 
 .gallery-page-main {
-grid-row: 2 / 3;
+    grid-row: 2 / 3;
 }
 
 .gallery-page-main article h1,
 .gallery-page-main article p,
-.gallery-page-main h2{
+.gallery-page-main h2 {
     width: 80vw;
     margin: 2rem auto;
 }
@@ -1008,7 +1008,7 @@ grid-row: 2 / 3;
     line-height: var(--lh-section-headings);
     margin: var(--margin-top-headings) 0 var(--margin-bottom-headings) 0;
     text-transform: uppercase;
-    
+
     border-left: 1.5rem solid var(--clr-headings-watermark);
     padding-left: .4rem;
 }
@@ -1116,14 +1116,14 @@ grid-row: 2 / 3;
     background: url(images/studio-images/IMG_1962-cropped.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-   
+
 }
 
 .slide:nth-child(3) {
     background: url(images/studio-images/IMG_1963-cropped.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-   
+
 }
 
 .slide:nth-child(4) {
@@ -1132,24 +1132,40 @@ grid-row: 2 / 3;
     background-size: cover;
 }
 
+.slide:nth-child(5) {
+    background: url(images/website-pictures/IMG_2083.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
 /* One to one gallery slider */
 
 .slides:first-child {
-    background: url(images/personal-trainer-1.jpg);
+    background: url(images/website-pictures/IMG_2081.JPG);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .slides:nth-child(2) {
-    background: url(images/personal-trainer-2-gallery.jpg);
+    background: url(images/website-pictures/IMG_0914.PNG);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .slides:nth-child(3) {
-    background: url(images/personal-trainer-3-gallery-edited.jpg);
-    background-repeat: no-repeat;
+    background: url(images/website-pictures/IMG_2082.JPG);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slides:nth-child(4) {
+    background: url(images/website-pictures/IMG_2067-edited.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 button#previous {
@@ -1199,6 +1215,13 @@ button#nextSlide:focus {
 
 .slide-2:nth-child(3) {
     background: url(images/group3.jpg);
+    background-repeat: no-repeat;
+    background-position: top top;
+    background-size: cover;
+}
+
+.slide-2:nth-child(4) {
+    background: url(images/website-pictures/IMG_7707.JPG);
     background-repeat: no-repeat;
     background-position: top top;
     background-size: cover;
@@ -1260,7 +1283,7 @@ button#nextSlideTwo:focus {
     border-radius: 50%;
     color: #fff;
     margin: 0 .3rem;
-    
+
 }
 
 button#prev {
@@ -1338,7 +1361,7 @@ button#next:focus {
         font-weight: bold;
         /* color: rgb(3, 3, 3); */
         color: rgb(255, 255, 255);
-        position: relative; 
+        position: relative;
     }
 
     nav ul li a:hover,
@@ -1346,7 +1369,7 @@ button#next:focus {
         animation-duration: 1s;
         animation-name: slidein;
         transition: all 500ms;
-        
+
     }
 
     nav ul li a:hover::before {
@@ -1362,30 +1385,30 @@ button#next:focus {
 
     @keyframes slidein {
         from {
-          width: 0%;
+            width: 0%;
         }
-      
+
         to {
-          width: 100%;
+            width: 100%;
         }
-      }
-    
+    }
+
 
     .logo img {
         width: 4rem;
     }
-    
+
     button {
         display: none;
     }
 
     .home-page-background-hero-image {
-        grid-row: 1 / 2; 
-        background: linear-gradient(90deg, rgba(166,244,205,1) 14%, rgba(120,237,202,1) 42%, rgba(179,237,222,1) 70%);
-        background: linear-gradient(90deg, rgba(53,198,87,1) 0%, rgba(45,184,119,.5) 0%, rgba(21,177,97,.5) 70%);
+        grid-row: 1 / 2;
+        background: linear-gradient(90deg, rgba(166, 244, 205, 1) 14%, rgba(120, 237, 202, 1) 42%, rgba(179, 237, 222, 1) 70%);
+        background: linear-gradient(90deg, rgba(53, 198, 87, 1) 0%, rgba(45, 184, 119, .5) 0%, rgba(21, 177, 97, .5) 70%);
         background: var(--clr-headings-watermark);
         border-bottom-left-radius: 15rem;
-       
+
     }
 
     .home-page-background-hero-image::before {
@@ -1409,7 +1432,7 @@ button#next:focus {
         font-size: var(--fs-section-headings);
         font-weight: 200;
         text-transform: uppercase;
-        line-height: 1.2; 
+        line-height: 1.2;
     }
 
     .quote span {
@@ -1418,13 +1441,13 @@ button#next:focus {
         font-family: Skranji;
     }
 
-    
+
 
     /* SECOND BACKGROUND IMAGE AT THE TOP OF THE PAGE */
 
     .second-background-image-header {
         background: url(images/img1.jpg);
-       
+
         background-size: cover;
         background-repeat: no-repeat;
         position: absolute;
@@ -1457,7 +1480,7 @@ button#next:focus {
     .column-section p {
         font-size: 1.3rem;
     }
-    
+
     .about-me-heading:first-letter {
         font-size: var(--fs-heading-first-letter-tablet);
         letter-spacing: -1.7rem;
@@ -1477,15 +1500,15 @@ button#next:focus {
         font-weight: 800;
         margin-top: .4rem;
         font-size: 5rem;
-       
+
     }
 
     /* SECOND IMAGE */
 
     .second-image {
         grid-row: 3 / 4;
-        background-position: center center;
         background-size: cover;
+        height: 35rem;
     }
 
     /* SPECIALIST AREAS */
@@ -1500,20 +1523,20 @@ button#next:focus {
     }
 
     .heading-styles h1 {
-        font-size: var(--fs-heading-following-letters-tablet);   
+        font-size: var(--fs-heading-following-letters-tablet);
     }
 
     .specialist-areas {
-       box-shadow: none;
-       margin: 3rem 0;
-       /* border-bottom: .1rem solid rgb(56, 70, 62); */
+        box-shadow: none;
+        margin: 3rem 0;
+        /* border-bottom: .1rem solid rgb(56, 70, 62); */
     }
 
     .specialist-areas ul {
         display: grid;
         grid-template-columns: repeat(2, minmax(230px, 30rem));
         grid-template-rows: repeat(3, minmax(4rem, 5rem));
-        gap: 1rem;    
+        gap: 1rem;
     }
 
     .specialist-areas ul li {
@@ -1534,7 +1557,7 @@ button#next:focus {
         margin-left: auto;
         margin-right: .5rem;
         width: 60%;
-        font-variant: small-caps;    
+        font-variant: small-caps;
     }
 
     .specialist-areas ul li i {
@@ -1551,8 +1574,8 @@ button#next:focus {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: .7rem;
-        height: 25rem; 
-        margin-top: 3rem; 
+        height: 25rem;
+        margin-top: 3rem;
     }
 
     .container-cards h1 {
@@ -1590,14 +1613,14 @@ button#next:focus {
         height: 150px;
     }
 
-    .testimonials-card-1 p, 
+    .testimonials-card-1 p,
     .testimonials-card p,
     .testimonials-card-img-right p {
         font-size: 1rem;
         padding: 1rem;
     }
 
-    .testimonials-card-1 h3, 
+    .testimonials-card-1 h3,
     .testimonials-card h3 {
         font-size: 1.3rem;
     }
@@ -1640,11 +1663,11 @@ button#next:focus {
         border-radius: 2rem;
     }
 
-    .button:hover, 
+    .button:hover,
     .button:focus {
         color: black;
         background: white;
-        border: 4px solid var(--clr-headings-watermark);
+        outline: 4px solid var(--clr-headings-watermark);
     }
 
     /* END OF HOME PAGE STYLES */
@@ -1652,7 +1675,7 @@ button#next:focus {
     /* CLASSES PAGE STYLES FOR TABLET */
 
     .classes-layout-grid {
-        grid-template-rows: 33rem auto 12rem; 
+        grid-template-rows: 33rem auto 12rem;
     }
 
     .plans-heading h1 {
@@ -1672,17 +1695,17 @@ button#next:focus {
     .plans-and-pricing p {
         font-size: 1.5rem;
         line-height: 1.4;
-        color:rgb(105, 112, 112); 
-        color: black; 
+        color: rgb(105, 112, 112);
+        color: black;
     }
- 
+
     .classes-description-paragraphs p {
         columns: 2;
         font-size: 1.5rem;
         color: rgb(102, 102, 102);
         font-weight: 300;
         gap: 2.5rem;
-        color: black; 
+        color: black;
         hyphens: auto;
     }
 
@@ -1698,12 +1721,12 @@ button#next:focus {
 
     .one-to-one-section::before {
         font-size: var(--fs-classes-section-numbers-tablet);
-        
+
     }
 
     .one-to-one-section h1 {
         font-size: var(--fs-classes-page-sections-tablet);
-       
+
     }
 
     .corporate-package-section::before {
@@ -1719,7 +1742,7 @@ button#next:focus {
         text-transform: none;
         line-height: 1.1;
         hyphens: auto;
-        
+
     }
 
     .custom-plan-section h1 span:nth-child(2) {
@@ -1744,7 +1767,7 @@ button#next:focus {
         height: 255px;
     }
 
-    .training-options-classes > h4 {
+    .training-options-classes>h4 {
         color: black;
         font-size: 1.5rem;
         font-weight: 300;
@@ -1792,7 +1815,7 @@ button#next:focus {
     .phone h2:nth-child(1)::before {
         padding: 2rem;
         font-size: 2rem;
-        
+
     }
 
     .phone h2:nth-child(2)::before {
@@ -1802,7 +1825,7 @@ button#next:focus {
 
     .phone h2 {
         font-size: 1.7rem;
-        
+
     }
 
     .phone h2:first-child {
@@ -1813,7 +1836,7 @@ button#next:focus {
 
     .gallery-page-grid {
         grid-template-rows: 33rem auto 12rem;
-        
+
     }
 
     .gallery-page-main h1 {
@@ -1824,7 +1847,7 @@ button#next:focus {
     .gallery-page-main p,
     .gallery-page-main h2 {
         font-size: 1.6rem;
-        color:rgb(79, 88, 88);
+        color: rgb(79, 88, 88);
         color: rgb(34, 33, 33);
         line-height: 1.4;
         margin: 3rem 0;
@@ -1856,7 +1879,7 @@ button#next:focus {
 
     .back-to-top a {
         font-size: 1.2rem;
-        
+
     }
 
     .back-to-top a:hover,
@@ -1883,4 +1906,80 @@ button#next:focus {
     footer i {
         font-size: 3rem;
     }
+}
+
+@media (min-width: 900px) {
+    /* STYLES FOR HOME PAGE */
+
+    .navbar a {
+        font-size: 1.2rem;
+    }
+
+    .logo {
+        width: 3rem;
+    }
+
+    .quote {
+        font-size: 2rem;
+        font-weight: 300;
+        width: 53%;
+    }
+
+    .home-page-background-hero-image::before {
+        font-size: 10rem;
+        top: 4.5rem;
+        left: 3rem;
+    }
+
+    .second-background-image-header {
+        height: 17rem;
+        width: 17rem;
+        right: 5rem;
+        top: 13rem;
+    }
+
+    .home-page-grid {
+        overflow: hidden;
+        grid-template-rows: 23rem auto auto auto auto auto 12rem;
+    }
+
+    .about-me-heading::first-letter {
+        font-size: 13rem;
+    }
+
+    .about-me h1:nth-child(2) {
+        font-size: 3.5rem;
+    }
+
+    .column-section p {
+        font-size: 1rem;
+    }
+
+    .second-image {
+        height: 28rem;
+        width: 28rem;
+        border-radius: 50%;
+        margin: 0 auto;
+        float: left;
+    }
+
+    .testimonials-card-1 {
+        width: 40rem;
+    }
+
+    .testimonials-card-img-right {
+        width: 40rem;
+    }
+
+    .third-image {
+        height: 34rem;
+    }
+
+    .heading-styles h1:nth-child(1)::first-letter {
+        font-size: 10rem;
+    }
+
+
+
+
 }
