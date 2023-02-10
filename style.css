@@ -1547,6 +1547,11 @@ button#next:focus {
         border-right: 1px solid rgb(139, 188, 233, .6);
     }
 
+    .specialist-areas ul li:nth-child(2),
+    .specialist-areas ul li:nth-child(4) {
+        border-right: none;
+    }
+
     .specialist-areas ul li p {
         font-size: 1.5rem;
         line-height: 1.2;
@@ -1941,6 +1946,9 @@ button#next:focus {
     .home-page-grid {
         overflow: hidden;
         grid-template-rows: 23rem auto auto auto auto auto 12rem;
+
+        --first-letter-laptop: 10rem;
+        --heading-letters-laptop: 4rem;
     }
 
     .about-me-heading::first-letter {
@@ -1951,16 +1959,68 @@ button#next:focus {
         font-size: 3.5rem;
     }
 
+    .column-section {
+        column-count: 3;
+    }
+
     .column-section p {
         font-size: 1rem;
     }
 
     .second-image {
-        height: 28rem;
-        width: 28rem;
+        height: 33rem;
+        width: 33rem;
         border-radius: 50%;
         margin: 0 auto;
-        float: left;
+        background-position: right;
+        
+    }
+
+    /* Specialist Areas */
+
+    .heading-styles h1:nth-child(1)::first-letter {
+        font-size: var(--first-letter-laptop);
+    }
+
+    .heading-styles h1 {
+        font-size: var(--heading-letters-laptop);
+    }
+
+    .specialist-areas ul li i {
+        font-size: 2.5rem;
+    }
+
+    .specialist-areas ul li p {
+        margin-left: 0;
+        font-variant: small-caps;
+        font-size: 1.3rem;
+        align-self: start;
+    }
+
+    .specialist-areas ul li {
+        border-right: 5px solid rgb(139, 188, 233, .2);
+    }
+
+    /* My Experties */
+
+    /* .container-cards {
+        grid-template-rows: auto;
+    } */
+
+    .container-cards h1 {
+        font-weight: 500;
+        line-height: 1.2;
+        font-size: 1.2rem;
+    }
+
+    /* Testimonials */
+
+    .heading-styles-testimonials h1::first-letter {
+        font-size: var(--first-letter-laptop);
+    }
+
+    .heading-styles-testimonials h1 {
+        font-size: var(--heading-letters-laptop);
     }
 
     .testimonials-card-1 {
@@ -1975,11 +2035,39 @@ button#next:focus {
         height: 34rem;
     }
 
-    .heading-styles h1:nth-child(1)::first-letter {
-        font-size: 10rem;
+    /* Personal Training */
+
+    .heading-styles-personal h1 {
+        font-size: var(--heading-letters-laptop);
     }
 
+    .heading-styles-personal h1::first-letter {
+        font-size: var(--first-letter-laptop);
+        letter-spacing: -3.5rem;
+        
+    }
 
+    .third-image {
+        height: 28rem;
+        width: 28rem;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
 
+    .container p.personal-training-introduction {
+        font-size: 1.3rem;
+        line-height: 1.4;
+        width: 40vw;
+        hyphens: auto;
+    }
+
+    .personal-and-online-training-list .section-with-circle-images img {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .section-with-circle-images:nth-child(1) {
+        margin-top: 5rem;
+    }
 
 }
